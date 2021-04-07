@@ -1,0 +1,82 @@
+@import url("./global.css");
+.time {
+  width: 100%;
+  float: left;
+  background-color: steelblue; }
+  @media screen and (min-width: 650px) {
+    .time {
+      width: 50%; } }
+
+.weather {
+  width: 100%;
+  float: right;
+  background-color: tan; }
+  @media screen and (min-width: 650px) {
+    .weather {
+      width: 50%; } }
+
+.social {
+  background-color: teal; }
+
+.logo {
+  background-color: violet; }
+
+.menu {
+  background-color: darkgray; }
+
+.pull-right {
+  background-color: salmon; }
+  @media screen and (min-width: 650px) {
+    .pull-right {
+      width: 60%;
+      float: right; } }
+
+.pull-left {
+  background-color: springgreen; }
+  @media screen and (min-width: 650px) {
+    .pull-left {
+      width: 40%;
+      float: left; } }
+
+.top-news {
+  background-color: darkgreen; }
+
+.right-column {
+  background-color: darkred; }
+  @media screen and (min-width: 650px) {
+    .right-column {
+      float: right;
+      width: 43%; } }
+
+.mid-column {
+  background-color: darkviolet; }
+  @media screen and (min-width: 650px) {
+    .mid-column {
+      float: right;
+      width: 57%; } }
+  @media screen and (min-width: 850px) {
+    .mid-column {
+      float: left; } }
+
+.more-news::after {
+  clear: both;
+  display: block;
+  content: ""; }
+
+.more-news .container {
+  width: 100%;
+  float: right; }
+  @media screen and (min-width: 850px) {
+    .more-news .container {
+      width: 70%;
+      float: right; } }
+
+.left-column {
+  background-color: gold; }
+  @media screen and (min-width: 650px) {
+    .left-column {
+      width: 100%; } }
+  @media screen and (min-width: 850px) {
+    .left-column {
+      width: 30%;
+      float: left; } }

@@ -1,0 +1,113 @@
+@import url("./global.css");
+//////////////////////////// margins & paddings
+$margin-bt: 16px;
+$margin-top: 16px;
+$padding-allside: 8px; /// in maghadir ro bad az strakcher gharar midam
+
+@mixin clear {
+  clear: both;
+  display: block;
+  content: "";
+}
+
+
+.time {
+  width: 100%;
+  float: left;
+  background-color: steelblue;
+
+  @media screen and(min-width:650px) {
+    width: 50%;
+  }
+}
+.weather {
+  width: 100%;
+  float: right;
+  background-color: tan;
+
+  @media screen and(min-width:650px) {
+    width: 50%;
+  }
+}
+.social {
+  background-color: teal;
+}
+.logo {
+  background-color: violet;
+}
+.menu {
+  background-color: darkgray;
+}
+
+///////////////////////////right
+.pull-right {
+  background-color: salmon;
+
+  @media screen and(min-width:650px) {
+    width: 60%;
+    float: right;
+  }
+}
+
+///////////////////////////left
+.pull-left {
+  background-color: springgreen;
+
+  @media screen and(min-width:650px) {
+    width: 40%;
+    float: left;
+  }
+}
+
+//////////////////////////////top - news
+.top-news {
+  background-color: darkgreen;
+}
+//////////////////////////////more-news
+.right-column {
+  background-color: darkred;
+
+  @media screen and(min-width:650px) {
+    float: right;
+    width: 43%;
+  }
+}
+///////////////////mid
+.mid-column {
+  background-color: darkviolet;
+
+  @media screen and(min-width:650px) {
+    float: right;
+    width: 57%;
+  }
+
+  @media screen and(min-width:850px) {
+    float: left;
+  }
+}
+.more-news::after {
+  @include clear();
+}
+
+.more-news .container {
+  width: 100%;
+  float: right;
+
+  @media screen and(min-width:850px) {
+    width: 70%;
+    float: right;
+  }
+}
+/////////////////left
+.left-column {
+  background-color: gold;
+
+  @media screen and(min-width:650px) {
+    width: 100%;
+  }
+
+  @media screen and(min-width:850px) {
+    width: 30%;
+    float: left;
+  }
+}

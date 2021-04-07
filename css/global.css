@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-align: center ; /* just for structure*/
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.container::after {
+  clear: both;
+  display: block;
+  content: "";
+}
+
+@font-face {
+  font-family: vazir;
+  src: url("../fonts/Vazir.ttf");
+  src: url("../fonts/Vazir.woff");
+  src: url("../fonts/Vazir.woff2");
+}
+@font-face {
+  font-family: vazir-bold;
+  src: url("../fonts/Vazir-Bold.ttf");
+  src: url("../fonts/Vazir-Bold.woff");
+  src: url("../fonts/Vazir-Bold.woff2");
+}
