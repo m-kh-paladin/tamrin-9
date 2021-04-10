@@ -10,7 +10,6 @@ $padding-allside: 8px; /// in maghadir ro bad az strakcher gharar midam
   content: "";
 }
 
-
 .time {
   width: 100%;
   float: left;
@@ -61,7 +60,25 @@ $padding-allside: 8px; /// in maghadir ro bad az strakcher gharar midam
 
 //////////////////////////////top - news
 .top-news {
-  background-color: darkgreen;
+  background-color: slateblue;
+}
+.main-top-news {
+  background-color: slateblue;
+  @media screen and(min-width:650px) {
+    float: right;
+    width: 60%;
+  }
+}
+.top-news-more {
+  @media screen and(min-width:650px) {
+    float: left;
+    width: 40%;
+  }
+}
+.top-news-details {
+  background-color: snow;
+  @media screen and(min-width:650px) {
+  }
 }
 //////////////////////////////more-news
 .right-column {

@@ -39,7 +39,22 @@
       float: left; } }
 
 .top-news {
-  background-color: darkgreen; }
+  background-color: slateblue; }
+
+.main-top-news {
+  background-color: slateblue; }
+  @media screen and (min-width: 650px) {
+    .main-top-news {
+      float: right;
+      width: 60%; } }
+
+@media screen and (min-width: 650px) {
+  .top-news-more {
+    float: left;
+    width: 40%; } }
+
+.top-news-details {
+  background-color: snow; }
 
 .right-column {
   background-color: darkred; }
