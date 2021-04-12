@@ -3,9 +3,14 @@
   margin: 0;
   border: 0;
   box-sizing: border-box;
-  text-align: center ; /* just for structure*/
 }
 
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;

@@ -10,32 +10,138 @@ $padding-allside: 8px; /// in maghadir ro bad az strakcher gharar midam
   content: "";
 }
 
+.main-header .top-menu {
+  background-color: #a14c4c;
+  padding: 3px 0;
+}
+///////////////////////////////////////////////// TIME
 .time {
-  width: 100%;
-  float: left;
-  background-color: steelblue;
+  font-family: vazir-bold;
+  text-align: center;
+  color: #fff;
+  margin: 20px 0;
+  font-size: 1.3em;
 
   @media screen and(min-width:650px) {
+    float: left;
+    text-align: left;
+    padding: 0 5px;
     width: 50%;
+    font-size: 1em;
+    margin: 0;
   }
 }
+///////////////////////////////////////////////// WEATHER
 .weather {
-  width: 100%;
-  float: right;
-  background-color: tan;
+  color: #fff;
+  margin: 20px 0;
+  font-size: 1.3em;
+  text-align: center;
 
   @media screen and(min-width:650px) {
+    padding: 2px 5px;
+    margin: 0;
+    float: right;
+    text-align: right;
     width: 50%;
+    font-size: 1em;
+  }
+  span {
+    font-family: vazir-bold;
   }
 }
+///////////////////////////////////////////////// SOCIAL
 .social {
-  background-color: teal;
+  text-align: center;
+  a {
+    color: #000;
+    display: inline-block;
+    font-size: 1.5em;
+    padding: 7px 10px;
+    @media screen and(min-width:650px) {
+      text-align: left;
+      padding: 7px 4px;
+      font-size: 1.1em;
+    }
+  }
+  @media screen and(min-width:650px) {
+    text-align: left;
+  }
 }
+///////////////////////////////////////////////// LOGO
 .logo {
-  background-color: violet;
+  text-align: center;
+  border-top: 2px solid rgb(194, 192, 192);
+  border-bottom: 2px solid rgb(194, 192, 192);
+  a {
+    padding: 20px 0;
+    display: inline-block;
+  }
+  h1 {
+    padding-top: 4px;
+  }
 }
-.menu {
-  background-color: darkgray;
+///////////////////////////////////////////////// NORMAL - MENU
+.normal-menu {
+  @media screen and(max-width:850px) {
+    display: none;
+  }
+  li {
+    font-family: vazir-bold;
+    display: inline-block;
+    a {
+      display: inline-block;
+      padding: 7px 8px;
+      font-size: 0.9em;
+      color: rgb(136, 129, 129);
+      i {
+        color: #000;
+      }
+    }
+  }
+}
+///////////////////////////////////////////////// RESPONSIVE - MENU
+.responsive-menu {
+  @media screen and(min-width:850px) {
+    display: none;
+  }
+  .toggle-icon {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+  }
+  i {
+    font-size: 2.7em;
+    padding: 10px;
+    cursor: pointer;
+  }
+  ul {
+    @media screen and(max-width:850px) {
+      display: none;
+      li {
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 1.2em;
+        i {
+          font-size: 1.7em;
+        }
+      }
+    }
+  }
+  li {
+    font-family: vazir-bold;
+    display: inline-block;
+    a {
+      display: inline-block;
+      padding: 7px 8px;
+      font-size: 0.9em;
+      color: rgb(136, 129, 129);
+      i {
+        color: #000000;
+      }
+    }
+  }
 }
 
 ///////////////////////////right
