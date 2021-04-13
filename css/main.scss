@@ -1,8 +1,9 @@
 @import url("./global.css");
 //////////////////////////// margins & paddings
-$margin-bt: 16px;
+$margin-sm-bt: 7px;
+$margin-bt: 10px;
 $margin-top: 16px;
-$padding-allside: 8px; /// in maghadir ro bad az strakcher gharar midam
+$padding-allside: 12px; /// in maghadir ro bad az strakcher gharar midam
 
 @mixin clear {
   clear: both;
@@ -143,22 +144,94 @@ $padding-allside: 8px; /// in maghadir ro bad az strakcher gharar midam
     }
   }
 }
+main {
+  background-color: rgb(238, 237, 237);
+}
 
 ///////////////////////////right
 .pull-right {
-  background-color: salmon;
+  margin-top: $margin-top;
 
-  @media screen and(min-width:650px) {
+  @media screen and(min-width:850px) {
     width: 60%;
     float: right;
   }
 }
+.margin-first-news {
+  padding-top: $margin-bt;
+  background-color: #000;
+}
+.first-news {
+  padding-top: 10px;
+  padding: $padding-allside;
+  background-color: #fff;
+  .container {
+    position: relative;
+  }
+}
+.first-news-img {
+  @media screen and(min-width:650px) {
+    width: 65%;
+    float: right;
+    padding-left: 10px;
+  }
+  @media screen and(min-width:950px) {
+    width: 60%;
+  }
+}
+.first-news-details {
+  h3 {
+    padding: $margin-bt;
+  }
+  P {
+    padding: $margin-bt;
+  }
+  time {
+    background-color: red;
+    color: #fff;
+    padding: 5px;
+    margin: $margin-bt;
+    display: inline-block;
+  }
+  .more {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  i {
+    text-align: left;
+    font-size: 1.3em;
+    color: red;
+  }
 
+  @media screen and(min-width:650px) {
+    width: 35%;
+    float: left;
+    time {
+      font-size: 0.8em;
+    }
+    p {
+      font-size: 0.9em;
+    }
+  }
+  @media screen and(min-width:950px) {
+    width: 40%;
+    h3 {
+      padding: $margin-sm-bt;
+    }
+    p {
+      padding: $margin-sm-bt;
+    }
+    time {
+      margin: $margin-sm-bt;
+    }
+  }
+}
 ///////////////////////////left
 .pull-left {
   background-color: springgreen;
 
-  @media screen and(min-width:650px) {
+  @media screen and(min-width:850px) {
     width: 40%;
     float: left;
   }
