@@ -10,7 +10,6 @@ body {
 
 a {
   text-decoration: none;
-
 }
 li {
   list-style: none;
@@ -30,7 +29,16 @@ img {
   display: block;
   content: "";
 }
-
+.more {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.more i {
+  text-align: left;
+  font-size: 1.3em;
+  color: #ff0000;
+}
 @font-face {
   font-family: vazir;
   src: url("../fonts/Vazir.ttf");
