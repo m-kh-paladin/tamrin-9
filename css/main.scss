@@ -1,6 +1,6 @@
-@import url("./global.css");
 @import "./varible.scss";
-@import url("../node_modules/font-awesome/css/font-awesome.min.css");
+@import "./global.scss";
+@import "../node_modules/font-awesome/css/font-awesome.min.css";
 
 @mixin clear {
   clear: both;
@@ -8,17 +8,33 @@
   content: "";
 }
 
+@mixin time {
+  font-size: 0.9em;
+  background-color: $red;
+  color: $white;
+  padding: 4px;
+  margin: $space-md-bt;
+  display: inline-block;
+}
+@mixin header {
+  margin-top: $space-top;
+  padding: $space-allside;
+  border-bottom: 2px solid #f2f2f2;
+  border-top: 5px solid #008000;
+  background-color: $white;
+}
+
 .main-header .top-menu {
-  background-color: #a14c4c;
+  background-color: $red;
   padding: 3px 0;
 }
 ///////////////////////////////////////////////// TIME
 .time {
   font-family: vazir;
   text-align: center;
-  color: #fff;
+  color: $white;
   margin: 20px 0;
-  font-size: 1em;
+  font-size: 0.9em;
 
   @media screen and(min-width:650px) {
     float: left;
@@ -31,11 +47,10 @@
 }
 ///////////////////////////////////////////////// WEATHER
 .weather {
-  color: #fff;
+  color: $white;
   margin: 20px 0;
-  font-size: 1em;
+  font-size: 0.9em;
   text-align: center;
-  
 
   @media screen and(min-width:650px) {
     padding: 2px 5px;
@@ -53,7 +68,7 @@
 .social {
   text-align: center;
   a {
-    color: #000;
+    color: $black;
     display: inline-block;
     font-size: 1.5em;
     padding: 7px 10px;
@@ -92,9 +107,9 @@
       display: inline-block;
       padding: 7px 8px;
       font-size: 0.9em;
-      color: rgb(136, 129, 129);
+      color: $gray-nav;
       i {
-        color: #000;
+        color: $black;
       }
     }
   }
@@ -105,8 +120,8 @@
     display: none;
   }
   .toggle-icon {
-    background-color: #000;
-    color: #fff;
+    background-color: $black;
+    color: $white;
     text-align: center;
   }
   i {
@@ -135,15 +150,15 @@
       display: inline-block;
       padding: 7px 8px;
       font-size: 0.9em;
-      color: rgb(136, 129, 129);
+      color: $gray-nav;
       i {
-        color: #000000;
+        color: $black;
       }
     }
   }
 }
 main {
-  background-color: rgb(238, 237, 237);
+  background-color: $gray-main;
 }
 
 ///////////////////////////right
@@ -159,13 +174,11 @@ main {
 .first-news {
   padding-top: 10px;
   padding: $space-allside;
-  background-color: #fff;
+  background-color: $white;
   border-top: 12px solid #000;
-  a{
+  position: relative;
+  a {
     display: block;
-  }
-  .container {
-    position: relative;
   }
 }
 .first-news-img {
@@ -173,23 +186,19 @@ main {
     width: 65%;
     float: right;
     padding-left: 10px;
-
   }
   @media screen and(min-width:950px) {
     width: 60%;
   }
 }
 .first-news-details {
-  h3,P {
+  h3,
+  P {
     padding: $space-md-bt;
   }
-  
+
   time {
-    background-color: red;
-    color: #fff;
-    padding: 5px;
-    margin: $space-md-bt;
-    display: inline-block;
+    @include time();
   }
 
   @media screen and(min-width:650px) {
@@ -215,6 +224,75 @@ main {
     }
   }
 }
+.speacial-news {
+  position: relative;
+  .container {
+    background-color: $white;
+  }
+  .haeder {
+    @include header();
+  }
+}
+.speacial-news-right {
+  background-color: $white;
+  padding: $space-allside;
+  @media screen and(min-width:650px) {
+    width: 50%;
+    float: right;
+  }
+  a img {
+    width: 100%;
+  }
+  h3 {
+    color: $black;
+    padding: 10px 0 20px;
+  }
+  p {
+    color: $gray-text;
+    padding-bottom: 15px;
+  }
+}
+.speacial-news-left {
+  ul {
+    padding: 0 10px;
+    :nth-last-child(1) {
+      border-bottom: none;
+    }
+    li {
+      border-bottom: 1px solid #f2f2f2;
+      padding: 10px 0;
+    }
+  }
+  @media screen and(min-width:650px) {
+    width: 50%;
+    float: left;
+  }
+
+  .right {
+    width: 25%;
+    float: right;
+  }
+  .left {
+    width: 75%;
+    float: left;
+    h4 {
+      padding: 10px 10px 0 0;
+    }
+    time {
+      @include time();
+      background-color: $green;
+      margin-top: 25px;
+      font-size: 1.1em;
+      @media screen and(min-width:650px) {
+        @include time();
+        background-color: $green;
+        margin-top: 0px;
+        margin: $space-allside;
+      }
+    }
+  }
+}
+
 ///////////////////////////left
 .pull-left {
   background-color: springgreen;
