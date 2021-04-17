@@ -32,8 +32,9 @@
   margin-top: $space-top;
   padding: $space-allside;
   border-bottom: 2px solid #f2f2f2;
-  border-top: 5px solid #008000;
+  border-top: 5px solid $green;
   background-color: $white;
+  font-size: 1.3em;
 }
 
 @mixin section {
@@ -59,7 +60,7 @@
   .left {
     width: 75%;
     float: left;
-    h4 {
+    h3 {
       padding-right: 10px;
       font-size: 0.9em;
     }
@@ -161,6 +162,9 @@
       padding: 7px 8px;
       font-size: 0.9em;
       color: $gray-nav;
+      &:hover {
+        color: #363333;
+      }
       i {
         color: $black;
       }
@@ -223,6 +227,7 @@ main {
     width: 60%;
     float: right;
     padding: 0;
+    padding-left: 16px;
   }
 }
 
@@ -230,7 +235,7 @@ main {
 
 .first-news {
   padding: $space-allside;
-  border-top: 12px solid #000;
+  border-top: 10px solid #000;
   position: relative;
   background-color: $white;
 
@@ -252,11 +257,12 @@ main {
   }
 }
 .first-news-details {
-  h3,
+  a {
+    color: $black;
+  }
   P {
     padding: $space-md-bt;
   }
-
   time {
     @include time();
   }
@@ -292,7 +298,7 @@ main {
   .container {
     background-color: $white;
   }
-  .haeder {
+  header {
     @include header();
   }
   .more {
@@ -316,6 +322,7 @@ main {
   p {
     color: $gray-text;
     padding-bottom: 15px;
+    font-size: 0.9em;
   }
 }
 .speacial-news-left {
@@ -323,7 +330,6 @@ main {
 }
 
 ///////////////////////////////////////////FAVORITE-NEWS
-
 
 .favorite-news {
   .news-right,
@@ -334,7 +340,7 @@ main {
       width: 50%;
       float: right;
     }
-    .header {
+    header {
       @include header();
     }
   }
@@ -373,35 +379,143 @@ main {
 }
 ///////////////////////////////////////////left
 .pull-left {
-  background-color: springgreen;
+  width: 100%;
+  margin-top: $space-top;
+  padding: 0 10px;
 
   @media screen and(min-width:850px) {
     width: 40%;
     float: left;
+    padding-right: 16px;
+  }
+
+  header {
+    @include header();
+    border-top: 10px solid $green;
+    margin-top: 0px;
+  }
+
+  .face-news {
+    background-color: $white;
+    position: relative;
+    .face-news-details {
+      padding: $space-allside;
+      h3 a {
+        font-size: 1.1em;
+        padding: $space-lg-bt;
+        font-size: 0.9em;
+      }
+      time {
+        @include time();
+        margin: 0;
+      }
+    }
+    .more {
+      @include arrow-icon();
+      i {
+        color: $green;
+      }
+    }
+  }
+
+  .last-news {
+    header {
+      @include header();
+      border-top: 10px solid $green;
+      text-align: center;
+      padding: 0;
+
+      .header-heading {
+        background-color: $gray-main;
+        display: inline-block;
+        padding: 7px 60px;
+      }
+    }
+    ul {
+      background-color: $white;
+      li {
+        .last-news-details {
+          padding: 10px 0;
+          position: relative;
+        }
+        a {
+          display: inline-block;
+          color: $black;
+          padding-right: 28px;
+        }
+        i {
+          color: $red;
+          font-size: 0.6em;
+          position: absolute;
+          top: 19px;
+          right: 10px;
+        }
+      }
+    }
   }
 }
 ///////////////////////////////////////////top - news
 .top-news {
-  background-color: slateblue;
+  .header {
+    @include header();
+    background-color: $black;
+    border-top: 10px solid $red;
+    border-bottom: 1px solid gray;
+    color: $white;
+    font-size: 1.2em;
+  }
+  .container {
+    padding: 20px;
+    background-color: $black;
+  }
 }
+
 .main-top-news {
-  background-color: slateblue;
+  position: relative;
+  background-color: $black;
+
+  .main-details {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    a {
+      color: $white;
+    }
+  }
   @media screen and(min-width:650px) {
     float: right;
     width: 60%;
   }
 }
 .top-news-more {
-  @media screen and(min-width:650px) {
-    float: left;
+  float: left;
+  width: 40%;
+
+  .top-news-right {
     width: 40%;
+    float: right;
+  }
+
+  .top-news-left {
+    width: 60%;
+    float: left;
+    background-color: $red;
+    padding: 10px;
+    a {
+      color: $white;
+    }
+    .top-news-details {
+      margin: 10px 0;
+      .container {
+        padding: 0px;
+      }
+    }
   }
 }
-.top-news-details {
-  background-color: snow;
-  @media screen and(min-width:650px) {
-  }
-}
+
 //////////////////////////////more-news
 .right-column {
   background-color: darkred;
@@ -428,7 +542,7 @@ main {
   @include clear();
 }
 
-.more-news .container {
+.more-news {
   width: 100%;
   float: right;
 

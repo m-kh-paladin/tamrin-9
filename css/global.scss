@@ -11,14 +11,20 @@ body {
 a {
   text-decoration: none;
   display: block;
+  color: $black;
 }
 li {
   list-style: none;
 }
 img {
-  max-width: 100%;
+  width: 100%;
   display: block;
   height: auto;
+}
+h3 a{
+  &:hover{
+    color: $green;
+  }
 }
 
 .wrapper {
