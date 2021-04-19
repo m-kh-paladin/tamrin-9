@@ -24,7 +24,7 @@ img {
   height: auto; }
 
 main {
-  padding: 0 10px; }
+  padding: 0  10px 30px; }
 
 .wrapper {
   max-width: 1200px;
@@ -702,3 +702,26 @@ main {
     .left-column {
       width: 30%;
       float: left; } }
+
+footer {
+  text-align: center; }
+  @media screen and (max-width: 850px) {
+    footer .normal-menu {
+      display: block; } }
+  footer nav {
+    background-color: #000; }
+    footer nav a {
+      color: #fff !important;
+      padding: 20px 8px !important; }
+      footer nav a:hover {
+        color: #b50000 !important; }
+  footer .footer-part2 {
+    background-color: #b50000; }
+    footer .footer-part2 .creator {
+      font-size: 1.3em; }
+    footer .footer-part2 .social li {
+      display: inline-block; }
+      footer .footer-part2 .social li a {
+        color: #fff; }
+        footer .footer-part2 .social li a:hover {
+          color: #000; }

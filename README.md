@@ -1,6 +1,6 @@
-# name project:
-pendar online
-[pendar](https://www.pendaronline.com/)
+# name project: pendar online
+
+real design : [pendar](https://www.pendaronline.com/)
  
  for instal project : 
 
@@ -14,5 +14,5 @@ pendar online
 
 ### work progression:
 
-till last section (without footer)
+ (complated)
 
