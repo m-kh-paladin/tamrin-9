@@ -37,6 +37,14 @@
   font-size: 1.3em;
 }
 
+@mixin section_hover {
+  &:hover {
+    h3 a {
+      color: $green;
+    }
+  }
+}
+
 @mixin section {
   ul {
     padding: 0 10px;
@@ -46,6 +54,7 @@
     li {
       border-bottom: 1px solid #f2f2f2;
       padding: 10px 0;
+      @include section_hover();
     }
   }
   @media screen and(min-width:650px) {
@@ -75,6 +84,26 @@
         margin-top: 0px;
         margin: $space-allside;
       }
+    }
+  }
+}
+
+@mixin more-news {
+  .more-news-content {
+    width: 50%;
+    padding: 10px;
+    float: right;
+    position: relative;
+
+    .more-news-details {
+      background-color: rgba(0, 0, 0, 0.7);
+      width: 89%;
+      color: $white;
+      padding: 5px;
+      font-size: 0.6em;
+      position: absolute;
+      bottom: 20px;
+      right: 10px;
     }
   }
 }
@@ -221,7 +250,6 @@ main {
 ///////////////////////////right
 .pull-right {
   margin-top: $space-top;
-  padding: 0 8px;
 
   @media screen and(min-width:850px) {
     width: 60%;
@@ -238,6 +266,8 @@ main {
   border-top: 10px solid #000;
   position: relative;
   background-color: $white;
+
+  @include section_hover();
 
   a {
     display: block;
@@ -308,6 +338,9 @@ main {
 .speacial-news-right {
   background-color: $white;
   padding: $space-allside;
+
+  @include section_hover();
+
   @media screen and(min-width:650px) {
     width: 50%;
     float: right;
@@ -381,7 +414,6 @@ main {
 .pull-left {
   width: 100%;
   margin-top: $space-top;
-  padding: 0 10px;
 
   @media screen and(min-width:850px) {
     width: 40%;
@@ -398,6 +430,7 @@ main {
   .face-news {
     background-color: $white;
     position: relative;
+    @include section_hover();
     .face-news-details {
       padding: $space-allside;
       h3 a {
@@ -456,7 +489,10 @@ main {
 }
 ///////////////////////////////////////////top - news
 .top-news {
-  .header {
+  background-color: $black;
+  position: relative;
+  padding-bottom: 25px;
+  header {
     @include header();
     background-color: $black;
     border-top: 10px solid $red;
@@ -464,23 +500,19 @@ main {
     color: $white;
     font-size: 1.2em;
   }
-  .container {
-    padding: 20px;
-    background-color: $black;
-  }
 }
 
 .main-top-news {
   position: relative;
   background-color: $black;
+  padding: 15px;
 
   .main-details {
     background-color: rgba(0, 0, 0, 0.7);
-    width: 100%;
-    padding: 15px;
+    min-width: 100%;
+    padding: 15px 28px;
+    margin: -55px -15px;
     position: absolute;
-    bottom: 0;
-    right: 0;
     a {
       color: $white;
     }
@@ -490,52 +522,96 @@ main {
     width: 60%;
   }
 }
+
 .top-news-more {
-  float: left;
-  width: 40%;
+  padding: 0 15px;
+  @media screen and(min-width:650px) {
+    float: left;
+    width: 40%;
+  }
+  .more {
+    @include arrow-icon();
+    margin-top: 20px;
+    i {
+      color: $green;
+    }
+  }
+
+  .top-news-details {
+    margin: 15px 0;
+    background-color: $red;
+  }
 
   .top-news-right {
-    width: 40%;
+    width: 45%;
     float: right;
   }
 
   .top-news-left {
-    width: 60%;
+    width: 55%;
     float: left;
     background-color: $red;
     padding: 10px;
     a {
       color: $white;
     }
-    .top-news-details {
-      margin: 10px 0;
-      .container {
-        padding: 0px;
-      }
-    }
   }
 }
 
 //////////////////////////////more-news
 .right-column {
-  background-color: darkred;
+  position: relative;
+  padding-bottom: 30px;
+  background-color: $white;
+  margin-top: 16px;
+  display: inline-block;
+  @include more-news();
+  header {
+    @include header();
+    margin-top: 0;
+  }
+  .more {
+    @include arrow-icon();
+    i{
+      color: $green;
+    }
+  }
 
   @media screen and(min-width:650px) {
     float: right;
     width: 43%;
   }
 }
+
 ///////////////////mid
 .mid-column {
-  background-color: darkviolet;
-
+  @include section_hover();
+  
+  h3 a {
+    padding: 22px 10px;
+  }
+  img {
+    padding: $space-allside;
+  }
+  header {
+    @include header();
+  }
+  .mid-column-content {
+    background-color: $white;
+  }
+  
   @media screen and(min-width:650px) {
     float: right;
     width: 57%;
+    padding-right: 15px;
+    h3 a{
+      padding: 15px 10px;
+    }
   }
-
+  
   @media screen and(min-width:850px) {
     float: left;
+    padding: 0 15px;
   }
 }
 .more-news::after {
@@ -544,16 +620,32 @@ main {
 
 .more-news {
   width: 100%;
-  float: right;
 
   @media screen and(min-width:850px) {
     width: 70%;
-    float: right;
+    display: inline-block;
   }
 }
 /////////////////left
 .left-column {
-  background-color: gold;
+  position: relative;
+  padding-bottom: 30px;
+  background-color: $white;
+  margin-top: 16px;
+  display: inline-block;
+  @include more-news();
+
+
+  header {
+    @include header();
+    margin-top: 0;
+  }
+  .more{
+    @include arrow-icon();
+    i{
+      color: $green;
+    }
+  }
 
   @media screen and(min-width:650px) {
     width: 100%;
