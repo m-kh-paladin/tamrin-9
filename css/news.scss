@@ -1,0 +1,244 @@
+@import "./varible.scss";
+@import "./global.scss";
+@import "../node_modules/font-awesome/css/font-awesome.min.css";
+
+.col-right {
+  @media screen and (min-width: 850px) {
+    width: 65%;
+    float: right;
+  }
+  .news-code {
+    padding: 10px;
+    display: block;
+    font-size: 1.1em;
+    text-align: center;
+    border-bottom: 1px solid $gray-nav;
+    .news-code-content {
+      padding: 10px 0;
+      @media screen and (min-width: 850px) {
+        float: right;
+        font-size: 0.8em;
+      }
+
+      span {
+        padding-left: 20px;
+      }
+      a {
+        display: inline-block;
+        padding-left: 10px;
+      }
+    }
+    .time {
+      text-align: center;
+      padding: 10px 0;
+      font-size: 1.1em;
+      @media screen and (min-width: 850px) {
+        float: left;
+        font-size: 0.8em;
+      }
+    }
+  }
+  .first-section {
+    margin-top: $space-top;
+    h2 a {
+      padding: 0 10px;
+      font-size: 0.9em;
+    }
+    .first-section-lead {
+      background-color: $white;
+      border-radius: 10px;
+      border-right: 3px solid $Purple;
+      padding: $space-allside-lg;
+      margin: $space-lg-bt;
+      font-size: 0.9em;
+    }
+    img {
+      padding: $space-lg-bt;
+    }
+    .more {
+      p {
+        font-size: 0.9em;
+      }
+      padding: $space-md-bt;
+      img {
+        padding: 20px 125px;
+        @media screen and (min-width: 850px) {
+          padding: 20px 200px;
+        }
+      }
+    }
+  }
+  .read-more {
+    padding: 25px 0;
+
+    .read-more-title {
+      img {
+        width: 30px;
+        float: right;
+      }
+      h3 {
+        display: inline-block;
+        font-family: $vazir;
+        color: $red;
+        font-weight: normal;
+      }
+    }
+    .read-more-lead {
+      margin-right: 25px;
+      padding-right: 25px;
+      border-right: 2px solid $Purple;
+      a {
+        padding: 5px 0;
+        font-size: 0.9em;
+        font-weight: normal;
+      }
+    }
+  }
+
+  .short-link {
+    .short-link-tag {
+      background-color: $Purple;
+      border-radius: 30px;
+      display: inline-block;
+      padding: 3px 10px;
+      margin: $space-lg-bt;
+      i {
+        padding-left: 5px;
+      }
+      a {
+        color: $white;
+        font-size: 0.7em;
+      }
+    }
+    .short-link-right {
+      text-align: center;
+      border: 1px solid $gray-border;
+      border-radius: 15px;
+      padding: 5px;
+      margin: $space-md-bt;
+      @media screen and (min-width: 850px) {
+        width: 60%;
+        float: right;
+      }
+      i {
+        display: inline;
+        color: $gray-text;
+        padding-right: 3px;
+      }
+      p {
+        font-size: 0.9em;
+        color: $gray-text;
+        display: inline-block;
+      }
+    }
+    .short-link-left {
+      ul {
+        text-align: center;
+        padding: $space-md-bt;
+        @media screen and (min-width: 850px) {
+          text-align: left;
+        }
+        li {
+          display: inline-block;
+          a {
+            font-size: 1.2em;
+            padding: 5px;
+            .fa-facebook {
+              color: #3b5998;
+            }
+            .fa-twitter {
+              color: #1da1f2;
+            }
+            .fa-send {
+              color: #0088cc;
+            }
+          }
+        }
+      }
+    }
+  }
+  .news-inner {
+    background-color: $white;
+    padding: $space-allside-md;
+    border-radius: 10px;
+    border-top: 3px solid $Purple;
+    margin-top: $space-top;
+
+    h3 a {
+      color: $Purple;
+      font-size: 1.1em;
+    }
+    li {
+      padding: 10px 0;
+    }
+    li i {
+      color: $Purple;
+      font-size: 0.6em;
+      float: right;
+      padding-top: 7px;
+      padding-left: 7px;
+      a {
+        display: inline-block;
+      }
+    }
+  }
+  form {
+    margin-top: $space-top;
+    border-radius: 10px;
+    padding: $space-allside-md;
+    background-color: $white;
+    border-top: 3px solid $Purple;
+    text-align: center;
+    display: inline-block;
+
+    h3 {
+      color: $Purple;
+      text-align: right;
+      padding: $space-lg-bt;
+    }
+    input {
+      width: 100%;
+      padding: 10px 20px;
+      margin: 10px 0;
+      border: 1px solid $gray-border;
+      font-family: $vazir-bold;
+      font-size: 1.1em;
+      text-align: right;
+      @media screen and (min-width: 850px) {
+        width: 48%;
+        padding: 15px 10px;
+      }
+    }
+    #email {
+      @media screen and (min-width: 850px) {
+        margin-right: 10px;
+      }
+    }
+    #message {
+      width: 100%;
+      padding-bottom: 240px;
+      margin-top: $space-top;
+    }
+    a {
+      background-color: $red;
+      padding: 10px 25px;
+      color: $white;
+      font-size: 1.2em;
+      display: block;
+      margin-top: $space-top;
+      text-align: center;
+      @media screen and (min-width: 850px) {
+          display: inline-block;
+          float: none;
+          float: left;
+      }
+    }
+  }
+}
+
+.col-left {
+  @media screen and (min-width: 850px) {
+    width: 35%;
+    float: left;
+  }
+}

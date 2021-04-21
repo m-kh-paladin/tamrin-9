@@ -3,15 +3,326 @@ $space-md-bt: 10px 0;
 $space-lg-bt: 12px 0;
 $space-top: 16px;
 $space-allside: 10px;
+$space-allside-md: 15px;
+$space-allside-lg: 25px;
 //////colors
 $white: #fff;
 $black: #000;
 $red: #b50000;
 $green: #098b54;
-$gray-border: #e6e6e6;
+$gray-border: #d4d4d4;
 $gray-main: #eeeded;
 $gray-nav: #888181;
 $gray-text: #5f5f5f;
+$Purple: #a72772;
 //////fonts
 $vazir: vazir;
 $vazir-bold: vazir-bold;
+
+//////////////////////////////Clear
+@mixin clear {
+  clear: both;
+  display: block;
+  content: "";
+}
+//////////////////////////////time
+
+@mixin time {
+  font-size: 0.9em;
+  background-color: $red;
+  color: $white;
+  padding: 4px;
+  margin: $space-allside;
+  display: inline-block;
+}
+
+//////////////////////////////arrow-icon
+
+@mixin arrow-icon {
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+  i {
+    text-align: left;
+    font-size: 1em;
+    color: #b50000;
+  }
+}
+
+//////////////////////////////section - header
+
+@mixin header {
+  margin-top: $space-top;
+  padding: $space-allside;
+  border-bottom: 2px solid #f2f2f2;
+  border-top: 5px solid $green;
+  background-color: $white;
+  font-size: 1.3em;
+}
+
+//////////////////////////////hover
+
+@mixin section_hover {
+  &:hover {
+    h3 a {
+      color: $green;
+    }
+  }
+}
+
+//////////////////////////////section
+
+@mixin section {
+  ul {
+    padding: 0 10px;
+    :nth-last-child(1) {
+      border-bottom: none;
+    }
+    li {
+      border-bottom: 1px solid #f2f2f2;
+      padding: 10px 0;
+      @include section_hover();
+    }
+  }
+  @media screen and(min-width:650px) {
+    width: 50%;
+    float: left;
+  }
+
+  .right {
+    width: 25%;
+    float: right;
+  }
+  .left {
+    width: 75%;
+    float: left;
+    h3 {
+      padding-right: 10px;
+      font-size: 0.9em;
+    }
+    time {
+      @include time();
+      background-color: $green;
+      margin-top: 25px;
+      font-size: 1.1em;
+      @media screen and(min-width:650px) {
+        @include time();
+        background-color: $green;
+        margin-top: 0px;
+        margin: $space-allside;
+      }
+    }
+  }
+}
+
+//////////////////////////////more- news
+
+@mixin more-news {
+  .more-news-content {
+    width: 50%;
+    padding: 10px;
+    float: right;
+    position: relative;
+
+    .more-news-details {
+      background-color: rgba(0, 0, 0, 0.7);
+      width: 89%;
+      color: $white;
+      padding: 5px;
+      font-size: 0.6em;
+      position: absolute;
+      bottom: 20px;
+      right: 10px;
+    }
+  }
+}
+
+//////////////////////////////normal menu
+
+@mixin menu {
+  @media screen and(max-width:850px) {
+    display: none;
+  }
+  li {
+    font-family: vazir-bold;
+    display: inline-block;
+    a {
+      display: inline-block;
+      padding: 7px 8px;
+      font-size: 0.9em;
+      color: $gray-nav;
+      &:hover {
+        color: #363333;
+      }
+      i {
+        color: $black;
+      }
+    }
+  }
+}
+
+//////////////////////////////top-header
+
+@mixin top_hedaer {
+  .top-menu {
+    background-color: $red;
+    padding: 3px 0;
+  }
+  ///////////////////////////////////////////////// TIME
+  .time {
+    font-family: vazir;
+    text-align: center;
+    color: $white;
+    margin: 20px 0;
+    font-size: 0.9em;
+
+    @media screen and(min-width:650px) {
+      float: left;
+      text-align: left;
+      padding: 0 5px;
+      width: 50%;
+      font-size: 0.9em;
+      margin: 0;
+      margin-top: 2px;
+    }
+  }
+  ///////////////////////////////////////////////// WEATHER
+  .weather {
+    color: $white;
+    margin: 20px 0;
+    font-size: 0.9em;
+    text-align: center;
+
+    @media screen and(min-width:650px) {
+      padding: 2px 5px;
+      margin: 0;
+      float: right;
+      text-align: right;
+      width: 50%;
+      font-size: 0.9em;
+    }
+    span {
+      font-family: vazir;
+    }
+  }
+  ///////////////////////////////////////////////// SOCIAL
+  .social {
+    text-align: center;
+    a {
+      color: $black;
+      display: inline-block;
+      font-size: 1.5em;
+      padding: 7px 10px;
+      @media screen and(min-width:650px) {
+        text-align: left;
+        padding: 7px 4px;
+        font-size: 1.1em;
+      }
+    }
+    @media screen and(min-width:650px) {
+      text-align: left;
+    }
+  }
+  ///////////////////////////////////////////////// LOGO
+  .logo {
+    text-align: center;
+    border-top: 2px solid #f2f2f2;
+    border-bottom: 2px solid #f2f2f2;
+    a {
+      padding: 20px 0;
+      display: inline-block;
+    }
+    h1 {
+      padding-top: 4px;
+    }
+  }
+  ///////////////////////////////////////////////// NORMAL - MENU
+  .normal-menu {
+    @include menu();
+  }
+  ///////////////////////////////////////////////// RESPONSIVE - MENU
+  .responsive-menu {
+    @media screen and(min-width:850px) {
+      display: none;
+    }
+    .toggle-icon {
+      background-color: $black;
+      color: $white;
+      text-align: center;
+    }
+    i {
+      font-size: 2em;
+      padding: 7px;
+      cursor: pointer;
+    }
+    ul {
+      @media screen and(max-width:850px) {
+        display: none;
+        li {
+          display: block;
+          text-align: center;
+          padding: 7px 0;
+          font-size: 1.2em;
+          i {
+            font-size: 1.7em;
+          }
+        }
+      }
+    }
+    li {
+      font-family: vazir-bold;
+      display: inline-block;
+      a {
+        display: inline-block;
+        padding: 7px 8px;
+        font-size: 0.9em;
+        color: $gray-nav;
+        i {
+          color: $black;
+        }
+      }
+    }
+  }
+}
+
+@mixin footer {
+  .normal-menu {
+    @include menu();
+    @media screen and(max-width:850px) {
+      display: block;
+    }
+  }
+  text-align: center;
+  nav {
+    background-color: $black;
+    a {
+      color: $white !important ;
+      padding: 20px 8px !important;
+      &:hover {
+        color: $red !important ;
+      }
+    }
+  }
+
+  /////////////////////social
+
+  .footer-part2 {
+    background-color: $red;
+    .creator {
+      font-size: 1.3em;
+    }
+    .social {
+      text-align: left;
+      li {
+        display: inline-block;
+        a {
+          color: $white;
+          padding: 5px;
+          &:hover {
+            color: $black;
+          }
+        }
+      }
+    }
+  }
+}

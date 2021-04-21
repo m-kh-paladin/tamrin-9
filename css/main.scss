@@ -1,252 +1,13 @@
 @import "./varible.scss";
 @import "./global.scss";
 @import "../node_modules/font-awesome/css/font-awesome.min.css";
+@import "./news.scss";
 
-@mixin clear {
-  clear: both;
-  display: block;
-  content: "";
-}
 
-@mixin time {
-  font-size: 0.9em;
-  background-color: $red;
-  color: $white;
-  padding: 4px;
-  margin: $space-allside;
-  display: inline-block;
+header {
+  @include top_hedaer();
 }
 
-@mixin arrow-icon {
-  position: absolute;
-  left: 15px;
-  bottom: 10px;
-  i {
-    text-align: left;
-    font-size: 1em;
-    color: #b50000;
-  }
-}
-
-@mixin header {
-  margin-top: $space-top;
-  padding: $space-allside;
-  border-bottom: 2px solid #f2f2f2;
-  border-top: 5px solid $green;
-  background-color: $white;
-  font-size: 1.3em;
-}
-
-@mixin section_hover {
-  &:hover {
-    h3 a {
-      color: $green;
-    }
-  }
-}
-
-@mixin section {
-  ul {
-    padding: 0 10px;
-    :nth-last-child(1) {
-      border-bottom: none;
-    }
-    li {
-      border-bottom: 1px solid #f2f2f2;
-      padding: 10px 0;
-      @include section_hover();
-    }
-  }
-  @media screen and(min-width:650px) {
-    width: 50%;
-    float: left;
-  }
-
-  .right {
-    width: 25%;
-    float: right;
-  }
-  .left {
-    width: 75%;
-    float: left;
-    h3 {
-      padding-right: 10px;
-      font-size: 0.9em;
-    }
-    time {
-      @include time();
-      background-color: $green;
-      margin-top: 25px;
-      font-size: 1.1em;
-      @media screen and(min-width:650px) {
-        @include time();
-        background-color: $green;
-        margin-top: 0px;
-        margin: $space-allside;
-      }
-    }
-  }
-}
-
-@mixin more-news {
-  .more-news-content {
-    width: 50%;
-    padding: 10px;
-    float: right;
-    position: relative;
-
-    .more-news-details {
-      background-color: rgba(0, 0, 0, 0.7);
-      width: 89%;
-      color: $white;
-      padding: 5px;
-      font-size: 0.6em;
-      position: absolute;
-      bottom: 20px;
-      right: 10px;
-    }
-  }
-}
-
-@mixin menu {
-  @media screen and(max-width:850px) {
-    display: none;
-  }
-  li {
-    font-family: vazir-bold;
-    display: inline-block;
-    a {
-      display: inline-block;
-      padding: 7px 8px;
-      font-size: 0.9em;
-      color: $gray-nav;
-      &:hover {
-        color: #363333;
-      }
-      i {
-        color: $black;
-      }
-    }
-  }
-}
-.main-header .top-menu {
-  background-color: $red;
-  padding: 3px 0;
-}
-///////////////////////////////////////////////// TIME
-.time {
-  font-family: vazir;
-  text-align: center;
-  color: $white;
-  margin: 20px 0;
-  font-size: 0.9em;
-
-  @media screen and(min-width:650px) {
-    float: left;
-    text-align: left;
-    padding: 0 5px;
-    width: 50%;
-    font-size: 1em;
-    margin: 0;
-  }
-}
-///////////////////////////////////////////////// WEATHER
-.weather {
-  color: $white;
-  margin: 20px 0;
-  font-size: 0.9em;
-  text-align: center;
-
-  @media screen and(min-width:650px) {
-    padding: 2px 5px;
-    margin: 0;
-    float: right;
-    text-align: right;
-    width: 50%;
-    font-size: 1em;
-  }
-  span {
-    font-family: vazir;
-  }
-}
-///////////////////////////////////////////////// SOCIAL
-.social {
-  text-align: center;
-  a {
-    color: $black;
-    display: inline-block;
-    font-size: 1.5em;
-    padding: 7px 10px;
-    @media screen and(min-width:650px) {
-      text-align: left;
-      padding: 7px 4px;
-      font-size: 1.1em;
-    }
-  }
-  @media screen and(min-width:650px) {
-    text-align: left;
-  }
-}
-///////////////////////////////////////////////// LOGO
-.logo {
-  text-align: center;
-  border-top: 2px solid #f2f2f2;
-  border-bottom: 2px solid #f2f2f2;
-  a {
-    padding: 20px 0;
-    display: inline-block;
-  }
-  h1 {
-    padding-top: 4px;
-  }
-}
-///////////////////////////////////////////////// NORMAL - MENU
-.normal-menu {
-  @include menu();
-}
-///////////////////////////////////////////////// RESPONSIVE - MENU
-.responsive-menu {
-  @media screen and(min-width:850px) {
-    display: none;
-  }
-  .toggle-icon {
-    background-color: $black;
-    color: $white;
-    text-align: center;
-  }
-  i {
-    font-size: 2em;
-    padding: 7px;
-    cursor: pointer;
-  }
-  ul {
-    @media screen and(max-width:850px) {
-      display: none;
-      li {
-        display: block;
-        text-align: center;
-        padding: 7px 0;
-        font-size: 1.2em;
-        i {
-          font-size: 1.7em;
-        }
-      }
-    }
-  }
-  li {
-    font-family: vazir-bold;
-    display: inline-block;
-    a {
-      display: inline-block;
-      padding: 7px 8px;
-      font-size: 0.9em;
-      color: $gray-nav;
-      i {
-        color: $black;
-      }
-    }
-  }
-}
 main {
   background-color: $gray-main;
 }
@@ -332,7 +93,7 @@ main {
   .container {
     background-color: $white;
   }
-  header {
+  .main-header {
     @include header();
   }
   .more {
@@ -609,7 +370,7 @@ main {
     width: 57%;
     padding-right: 15px;
     h3 a {
-      padding: 15px 10px;
+      padding: 22px 10px;
     }
   }
 
@@ -663,38 +424,5 @@ main {
 /////////////////footer
 
 footer {
-  .normal-menu{
-  @media screen and(max-width:850px) {
-    display: block;
-  }
-  }
-  text-align: center;
-  nav {
-    background-color: $black;
-    a {
-      color: $white !important ;
-      padding: 20px 8px !important;
-      &:hover {
-        color: $red !important ;
-      }
-    }
-  }
-/////////////////////social
-  .footer-part2 {
-    background-color: $red;
-    .creator{
-      font-size: 1.3em;
-    }
-    .social {
-      li {
-        display: inline-block;
-        a {
-          color: $white;
-          &:hover {
-            color: $black;
-          }
-        }
-      }
-    }
-  }
+  @include footer();
 }
