@@ -2,7 +2,7 @@
 @import "./global.scss";
 @import "../node_modules/font-awesome/css/font-awesome.min.css";
 @import "./news.scss";
-
+@import "./economic.scss";
 
 header {
   @include top_hedaer();
@@ -197,22 +197,7 @@ main {
     position: relative;
     @include section_hover();
     .face-news-details {
-      padding: $space-allside;
-      h3 a {
-        font-size: 1.1em;
-        padding: $space-lg-bt;
-        font-size: 0.9em;
-      }
-      time {
-        @include time();
-        margin: 0;
-      }
-    }
-    .more {
-      @include arrow-icon();
-      i {
-        color: $green;
-      }
+      @include face-news();
     }
   }
 

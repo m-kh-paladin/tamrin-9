@@ -15,6 +15,7 @@ $gray-main: #eeeded;
 $gray-nav: #888181;
 $gray-text: #5f5f5f;
 $Purple: #a72772;
+$blue: #551a8b;
 //////fonts
 $vazir: vazir;
 $vazir-bold: vazir-bold;
@@ -284,7 +285,7 @@ $vazir-bold: vazir-bold;
     }
   }
 }
-
+//////////////////////////footer
 @mixin footer {
   .normal-menu {
     @include menu();
@@ -312,7 +313,10 @@ $vazir-bold: vazir-bold;
       font-size: 1.3em;
     }
     .social {
-      text-align: left;
+      text-align: center;
+      @media screen and(min-width:850px) {
+        text-align: left;
+      }
       li {
         display: inline-block;
         a {
@@ -324,5 +328,51 @@ $vazir-bold: vazir-bold;
         }
       }
     }
+  }
+}
+//////////////////////section model in news page
+
+@mixin inner {
+  background-color: $white;
+  padding: $space-allside-md;
+  border-radius: 10px;
+  border-top: 3px solid $Purple;
+  margin-top: $space-top;
+
+  h4 a {
+    color: $Purple;
+    font-size: 1.1em;
+  }
+  li {
+    padding: 10px 0;
+  }
+  li i {
+    color: $Purple;
+    font-size: 0.6em;
+    float: right;
+    padding-top: 7px;
+    padding-left: 7px;
+    a {
+      display: inline-block;
+    }
+  }
+}
+
+@mixin face-news {
+  padding: $space-allside;
+  h3 a {
+    font-size: 1.1em;
+    padding: $space-lg-bt;
+    font-size: 0.9em;
+  }
+  time {
+    @include time();
+    margin: 0;
+  }
+}
+.more {
+  @include arrow-icon();
+  i {
+    color: $green;
   }
 }

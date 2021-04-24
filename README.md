@@ -14,5 +14,5 @@ real design : [pendar](https://www.pendaronline.com/)
 
 ### work progression:
 
- (complated)
+ page home , news and economic (complated)
 
