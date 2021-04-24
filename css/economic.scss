@@ -2,26 +2,26 @@
 @import "./global.scss";
 @import "../node_modules/font-awesome/css/font-awesome.min.css";
 
-.ec-pull-right {
+.sv-pull-right {
   @media screen and (min-width: 850px) {
     width: 60%;
     float: right;
     padding-left: $space-top;
   }
 
-  .ec-first-news {
+  .sv-first-news {
     border-top: 5px solid $black;
     padding: $space-allside;
     background-color: $white;
     margin-top: $space-top;
     position: relative;
-    .ec-right {
+    .sv-right {
       @media screen and (min-width: 850px) {
         width: 60%;
         float: right;
       }
     }
-    .ec-left {
+    .sv-left {
       @media screen and (min-width: 850px) {
         width: 40%;
         float: left;
@@ -44,6 +44,8 @@
     }
   }
 
+  ////////////////////////////////////// ECONOMIC
+
   .economic {
     header {
       @include header();
@@ -59,6 +61,8 @@
       }
     }
 
+  ////////////////////////////////////// RIGHT
+
     .economic-right {
       @media screen and (min-width: 650px) {
         width: 30%;
@@ -69,7 +73,7 @@
         width: 25%;
       }
     }
-    .economic-left {
+    .sv-onomic-left {
       h4 {
         padding: 7px 0;
       }
@@ -98,21 +102,26 @@
   }
 }
 
-.ec-pull-left {
+  ////////////////////////////////////// LEFT
+
+
+.sv-pull-left {
   @media screen and (min-width: 850px) {
     width: 40%;
     float: left;
     padding-right: $space-top;
   }
 
-  .ec-last-news {
+  ////////////////////////////////////// LAST - NEWS
+
+  .sv-last-news {
     header {
       @include header();
       text-align: center;
       font-size: 0.9em;
     }
   }
-  .ec-different-news {
+  .sv-different-news {
     position: relative;
     header {
       @include header();
@@ -123,7 +132,7 @@
       background-color: $white;
       padding-bottom: 30px;
       li {
-        .ec-different-news-detials {
+        .sv-different-news-detials {
           padding: 10px 0;
           position: relative;
           &:hover {
@@ -151,18 +160,18 @@
     }
   }
 
-  .ec-face-news {
+  .sv-face-news {
     background-color: $white;
     position: relative;
     @include section_hover();
     header {
       @include header();
     }
-    .ec-face-news-details {
+    .sv-face-news-details {
       @include face-news();
     }
   }
-  .ec-currency-news {
+  .sv-currency-news {
     background-color: $white;
     position: relative;
     header {
@@ -172,11 +181,11 @@
     header {
       @include header();
     }
-    .ec-currency-news-details {
+    .sv-currency-news-details {
       @include face-news();
     }
   }
-  .ec-exchange-news {
+  .sv-exchange-news {
     background-color: $white;
     position: relative;
     header {
@@ -186,7 +195,7 @@
     header {
       @include header();
     }
-    .ec-exchange-news-details {
+    .sv-exchange-news-details {
       @include face-news();
     }
   }

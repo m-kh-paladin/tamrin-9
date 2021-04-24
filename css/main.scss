@@ -3,6 +3,7 @@
 @import "../node_modules/font-awesome/css/font-awesome.min.css";
 @import "./news.scss";
 @import "./economic.scss";
+@import "./tags.scss";
 
 header {
   @include top_hedaer();

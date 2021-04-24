@@ -1,6 +1,7 @@
 @import url(../node_modules/font-awesome/css/font-awesome.min.css);
 @import url(../node_modules/font-awesome/css/font-awesome.min.css);
 @import url(../node_modules/font-awesome/css/font-awesome.min.css);
+@import url(../node_modules/font-awesome/css/font-awesome.min.css);
 .more {
   position: absolute;
   left: 15px;
@@ -438,33 +439,33 @@ main {
   src: url("../fonts/Vazir-Bold.woff2"); }
 
 @media screen and (min-width: 850px) {
-  .ec-pull-right {
+  .sv-pull-right {
     width: 60%;
     float: right;
     padding-left: 16px; } }
 
-.ec-pull-right .ec-first-news {
+.sv-pull-right .sv-first-news {
   border-top: 5px solid #000;
   padding: 10px;
   background-color: #fff;
   margin-top: 16px;
   position: relative; }
   @media screen and (min-width: 850px) {
-    .ec-pull-right .ec-first-news .ec-right {
+    .sv-pull-right .sv-first-news .sv-right {
       width: 60%;
       float: right; } }
   @media screen and (min-width: 850px) {
-    .ec-pull-right .ec-first-news .ec-left {
+    .sv-pull-right .sv-first-news .sv-left {
       width: 40%;
       float: left; } }
-  .ec-pull-right .ec-first-news .ec-left h2 a {
+  .sv-pull-right .sv-first-news .sv-left h2 a {
     color: #551a8b;
     padding: 15px;
     font-size: 1.1em; }
     @media screen and (min-width: 850px) {
-      .ec-pull-right .ec-first-news .ec-left h2 a {
+      .sv-pull-right .sv-first-news .sv-left h2 a {
         font-size: 1.3em; } }
-  .ec-pull-right .ec-first-news .ec-left time {
+  .sv-pull-right .sv-first-news .sv-left time {
     font-size: 0.9em;
     background-color: #b50000;
     color: #fff;
@@ -472,16 +473,16 @@ main {
     margin: 10px;
     display: inline-block;
     font-size: 0.8em; }
-  .ec-pull-right .ec-first-news .more {
+  .sv-pull-right .sv-first-news .more {
     position: absolute;
     left: 15px;
     bottom: 10px; }
-    .ec-pull-right .ec-first-news .more i {
+    .sv-pull-right .sv-first-news .more i {
       text-align: left;
       font-size: 1em;
       color: #b50000; }
 
-.ec-pull-right .economic header {
+.sv-pull-right .economic header {
   margin-top: 16px;
   padding: 10px;
   border-bottom: 2px solid #f2f2f2;
@@ -490,53 +491,53 @@ main {
   font-size: 1.3em;
   border-top-color: #b50000; }
 
-.ec-pull-right .economic ul {
+.sv-pull-right .economic ul {
   margin-top: 16px; }
-  .ec-pull-right .economic ul li {
+  .sv-pull-right .economic ul li {
     background-color: #fff;
     padding: 15px;
     margin: 12px 0; }
 
 @media screen and (min-width: 650px) {
-  .ec-pull-right .economic .economic-right {
+  .sv-pull-right .economic .economic-right {
     width: 30%;
     float: right;
     padding-left: 5px; } }
 
 @media screen and (min-width: 850px) {
-  .ec-pull-right .economic .economic-right {
+  .sv-pull-right .economic .economic-right {
     width: 25%; } }
 
-.ec-pull-right .economic .economic-left h4 {
+.sv-pull-right .economic .sv-onomic-left h4 {
   padding: 7px 0; }
 
 @media screen and (min-width: 650px) {
-  .ec-pull-right .economic .economic-left {
+  .sv-pull-right .economic .sv-onomic-left {
     width: 70%;
     float: left;
     padding-right: 5px; } }
 
 @media screen and (min-width: 850px) {
-  .ec-pull-right .economic .economic-left p {
+  .sv-pull-right .economic .sv-onomic-left p {
     font-size: 0.8em; } }
 
-.ec-pull-right .reload {
+.sv-pull-right .reload {
   text-align: left;
   background-color: #b50000;
   color: #fff;
   float: left;
   padding: 7px 12px;
   font-size: 0.9em; }
-  .ec-pull-right .reload:hover {
+  .sv-pull-right .reload:hover {
     background-color: #850502; }
 
 @media screen and (min-width: 850px) {
-  .ec-pull-left {
+  .sv-pull-left {
     width: 40%;
     float: left;
     padding-right: 16px; } }
 
-.ec-pull-left .ec-last-news header {
+.sv-pull-left .sv-last-news header {
   margin-top: 16px;
   padding: 10px;
   border-bottom: 2px solid #f2f2f2;
@@ -546,9 +547,9 @@ main {
   text-align: center;
   font-size: 0.9em; }
 
-.ec-pull-left .ec-different-news {
+.sv-pull-left .sv-different-news {
   position: relative; }
-  .ec-pull-left .ec-different-news header {
+  .sv-pull-left .sv-different-news header {
     margin-top: 16px;
     padding: 10px;
     border-bottom: 2px solid #f2f2f2;
@@ -556,52 +557,52 @@ main {
     background-color: #fff;
     font-size: 1.3em;
     border-top-color: #b50000; }
-  .ec-pull-left .ec-different-news ul {
+  .sv-pull-left .sv-different-news ul {
     background-color: #fff;
     padding-bottom: 30px; }
-    .ec-pull-left .ec-different-news ul li .ec-different-news-detials {
+    .sv-pull-left .sv-different-news ul li .sv-different-news-detials {
       padding: 10px 0;
       position: relative; }
-      .ec-pull-left .ec-different-news ul li .ec-different-news-detials:hover a {
+      .sv-pull-left .sv-different-news ul li .sv-different-news-detials:hover a {
         color: #b50000; }
-    .ec-pull-left .ec-different-news ul li a {
+    .sv-pull-left .sv-different-news ul li a {
       display: inline-block;
       color: #000;
       padding-right: 28px; }
-    .ec-pull-left .ec-different-news ul li i {
+    .sv-pull-left .sv-different-news ul li i {
       color: #b50000;
       font-size: 0.6em;
       position: absolute;
       top: 19px;
       right: 10px; }
-  .ec-pull-left .ec-different-news .more {
+  .sv-pull-left .sv-different-news .more {
     position: absolute;
     left: 15px;
     bottom: 10px; }
-    .ec-pull-left .ec-different-news .more i {
+    .sv-pull-left .sv-different-news .more i {
       text-align: left;
       font-size: 1em;
       color: #b50000; }
 
-.ec-pull-left .ec-face-news {
+.sv-pull-left .sv-face-news {
   background-color: #fff;
   position: relative; }
-  .ec-pull-left .ec-face-news:hover h3 a {
+  .sv-pull-left .sv-face-news:hover h3 a {
     color: #098b54; }
-  .ec-pull-left .ec-face-news header {
+  .sv-pull-left .sv-face-news header {
     margin-top: 16px;
     padding: 10px;
     border-bottom: 2px solid #f2f2f2;
     border-top: 5px solid #098b54;
     background-color: #fff;
     font-size: 1.3em; }
-  .ec-pull-left .ec-face-news .ec-face-news-details {
+  .sv-pull-left .sv-face-news .sv-face-news-details {
     padding: 10px; }
-    .ec-pull-left .ec-face-news .ec-face-news-details h3 a {
+    .sv-pull-left .sv-face-news .sv-face-news-details h3 a {
       font-size: 1.1em;
       padding: 12px 0;
       font-size: 0.9em; }
-    .ec-pull-left .ec-face-news .ec-face-news-details time {
+    .sv-pull-left .sv-face-news .sv-face-news-details time {
       font-size: 0.9em;
       background-color: #b50000;
       color: #fff;
@@ -610,32 +611,32 @@ main {
       display: inline-block;
       margin: 0; }
 
-.ec-pull-left .ec-currency-news {
+.sv-pull-left .sv-currency-news {
   background-color: #fff;
   position: relative; }
-  .ec-pull-left .ec-currency-news header {
+  .sv-pull-left .sv-currency-news header {
     margin-top: 16px;
     padding: 10px;
     border-bottom: 2px solid #f2f2f2;
     border-top: 5px solid #098b54;
     background-color: #fff;
     font-size: 1.3em; }
-  .ec-pull-left .ec-currency-news:hover h3 a {
+  .sv-pull-left .sv-currency-news:hover h3 a {
     color: #098b54; }
-  .ec-pull-left .ec-currency-news header {
+  .sv-pull-left .sv-currency-news header {
     margin-top: 16px;
     padding: 10px;
     border-bottom: 2px solid #f2f2f2;
     border-top: 5px solid #098b54;
     background-color: #fff;
     font-size: 1.3em; }
-  .ec-pull-left .ec-currency-news .ec-currency-news-details {
+  .sv-pull-left .sv-currency-news .sv-currency-news-details {
     padding: 10px; }
-    .ec-pull-left .ec-currency-news .ec-currency-news-details h3 a {
+    .sv-pull-left .sv-currency-news .sv-currency-news-details h3 a {
       font-size: 1.1em;
       padding: 12px 0;
       font-size: 0.9em; }
-    .ec-pull-left .ec-currency-news .ec-currency-news-details time {
+    .sv-pull-left .sv-currency-news .sv-currency-news-details time {
       font-size: 0.9em;
       background-color: #b50000;
       color: #fff;
@@ -644,32 +645,32 @@ main {
       display: inline-block;
       margin: 0; }
 
-.ec-pull-left .ec-exchange-news {
+.sv-pull-left .sv-exchange-news {
   background-color: #fff;
   position: relative; }
-  .ec-pull-left .ec-exchange-news header {
+  .sv-pull-left .sv-exchange-news header {
     margin-top: 16px;
     padding: 10px;
     border-bottom: 2px solid #f2f2f2;
     border-top: 5px solid #098b54;
     background-color: #fff;
     font-size: 1.3em; }
-  .ec-pull-left .ec-exchange-news:hover h3 a {
+  .sv-pull-left .sv-exchange-news:hover h3 a {
     color: #098b54; }
-  .ec-pull-left .ec-exchange-news header {
+  .sv-pull-left .sv-exchange-news header {
     margin-top: 16px;
     padding: 10px;
     border-bottom: 2px solid #f2f2f2;
     border-top: 5px solid #098b54;
     background-color: #fff;
     font-size: 1.3em; }
-  .ec-pull-left .ec-exchange-news .ec-exchange-news-details {
+  .sv-pull-left .sv-exchange-news .sv-exchange-news-details {
     padding: 10px; }
-    .ec-pull-left .ec-exchange-news .ec-exchange-news-details h3 a {
+    .sv-pull-left .sv-exchange-news .sv-exchange-news-details h3 a {
       font-size: 1.1em;
       padding: 12px 0;
       font-size: 0.9em; }
-    .ec-pull-left .ec-exchange-news .ec-exchange-news-details time {
+    .sv-pull-left .sv-exchange-news .sv-exchange-news-details time {
       font-size: 0.9em;
       background-color: #b50000;
       color: #fff;
@@ -677,6 +678,115 @@ main {
       margin: 10px;
       display: inline-block;
       margin: 0; }
+
+.more {
+  position: absolute;
+  left: 15px;
+  bottom: 10px; }
+  .more i {
+    text-align: left;
+    font-size: 1em;
+    color: #b50000; }
+  .more i {
+    color: #098b54; }
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: vazir; }
+  body a {
+    transition: all 0.3s ease-in-out; }
+
+a {
+  text-decoration: none;
+  display: block;
+  color: #000; }
+
+li {
+  list-style: none; }
+
+img {
+  width: 100%;
+  display: block;
+  height: auto; }
+
+main {
+  padding: 0  10px 30px; }
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.container::after {
+  clear: both;
+  display: block;
+  content: ""; }
+
+@font-face {
+  font-family: vazir;
+  src: url("../fonts/Vazir.ttf");
+  src: url("../fonts/Vazir.woff");
+  src: url("../fonts/Vazir.woff2"); }
+
+@font-face {
+  font-family: vazir-bold;
+  src: url("../fonts/Vazir-Bold.ttf");
+  src: url("../fonts/Vazir-Bold.woff");
+  src: url("../fonts/Vazir-Bold.woff2"); }
+
+.main-column {
+  width: 100%; }
+  @media screen and (min-width: 850px) {
+    .main-column {
+      width: 70%; } }
+
+.tags-header {
+  width: 100%;
+  margin-top: 16px;
+  background-color: #d4d4d4;
+  display: inline-block;
+  padding: 7px; }
+
+.tags ul {
+  margin-top: 16px; }
+  .tags ul li {
+    background-color: #fff;
+    padding: 15px;
+    margin: 12px 0; }
+
+@media screen and (min-width: 650px) {
+  .tags .tags-right {
+    width: 30%;
+    float: right;
+    padding-left: 5px; } }
+
+@media screen and (min-width: 850px) {
+  .tags .tags-right {
+    width: 25%; } }
+
+.tags .tags-left h4 {
+  padding: 7px 0; }
+
+@media screen and (min-width: 650px) {
+  .tags .tags-left {
+    width: 70%;
+    float: left;
+    padding-right: 5px; } }
+
+@media screen and (min-width: 850px) {
+  .tags .tags-left p {
+    font-size: 0.8em; } }
+
+.tags .reload {
+  display: block;
+  text-align: center;
+  background-color: #b50000;
+  color: #fff;
+  padding: 10px 0; }
 
 header .top-menu {
   background-color: #b50000;
