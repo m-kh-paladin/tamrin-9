@@ -126,29 +126,29 @@ main {
     float: right;
     padding-left: 15px; } }
 
-.col-right .news-code {
+.col-right .tools {
   padding: 10px;
   display: block;
   font-size: 1.1em;
   text-align: center;
   border-bottom: 1px solid #888181; }
-  .col-right .news-code .news-code-content {
+  .col-right .tools .tools-content {
     padding: 10px 0; }
     @media screen and (min-width: 850px) {
-      .col-right .news-code .news-code-content {
+      .col-right .tools .tools-content {
         float: right;
         font-size: 0.8em; } }
-    .col-right .news-code .news-code-content span {
+    .col-right .tools .tools-content span {
       padding-left: 20px; }
-    .col-right .news-code .news-code-content a {
+    .col-right .tools .tools-content a {
       display: inline-block;
       padding-left: 10px; }
-  .col-right .news-code .time {
+  .col-right .tools .time {
     text-align: center;
     padding: 10px 0;
     font-size: 1.1em; }
     @media screen and (min-width: 850px) {
-      .col-right .news-code .time {
+      .col-right .tools .time {
         float: left;
         font-size: 0.8em; } }
 
@@ -166,20 +166,51 @@ main {
     font-size: 0.9em; }
   .col-right .first-section img {
     padding: 12px 0; }
-  .col-right .first-section .more {
+  .col-right .first-section .echo-details {
     padding: 10px 0; }
-    .col-right .first-section .more p {
+    .col-right .first-section .echo-details p {
       font-size: 0.9em; }
-    .col-right .first-section .more img {
+    .col-right .first-section .echo-details .pic-echo {
       padding: 20px 125px; }
       @media screen and (min-width: 850px) {
-        .col-right .first-section .more img {
+        .col-right .first-section .echo-details .pic-echo {
           padding: 20px 200px; } }
+    .col-right .first-section .echo-details audio {
+      width: 100%;
+      margin: 10px 0; }
+    .col-right .first-section .echo-details video {
+      width: 100%; }
+    .col-right .first-section .echo-details table {
+      width: 100%;
+      text-align: center;
+      border-collapse: collapse;
+      margin: 30px 0;
+      font-size: 0.9em; }
+      .col-right .first-section .echo-details table thead {
+        background-color: #9e1d23;
+        color: white; }
+      .col-right .first-section .echo-details table tr:nth-child(even) {
+        background-color: #cf9b9e;
+        color: white; }
+      .col-right .first-section .echo-details table td {
+        padding: 7px 10px; }
+    .col-right .first-section .echo-details ul {
+      margin: 20px 0; }
+      .col-right .first-section .echo-details ul a {
+        display: inline-block;
+        padding: 5px 15px;
+        margin: 3px 0;
+        color: #756e75;
+        border-radius: 10px; }
+        .col-right .first-section .echo-details ul a:hover {
+          background-color: #b50000;
+          color: #fff; }
 
 .col-right .read-more {
   padding: 25px 0; }
   .col-right .read-more .read-more-title img {
     width: 30px;
+    padding: 0;
     float: right; }
   .col-right .read-more .read-more-title h3 {
     display: inline-block;
@@ -195,15 +226,15 @@ main {
       font-size: 0.9em;
       font-weight: normal; }
 
-.col-right .short-link .short-link-tag {
+.col-right .tags {
   background-color: #a72772;
   border-radius: 30px;
   display: inline-block;
   padding: 3px 10px;
   margin: 12px 0; }
-  .col-right .short-link .short-link-tag i {
+  .col-right .tags i {
     padding-left: 5px; }
-  .col-right .short-link .short-link-tag a {
+  .col-right .tags a {
     color: #fff;
     font-size: 0.7em; }
 
@@ -851,20 +882,20 @@ header .logo {
     padding-top: 4px; }
 
 @media screen and (max-width: 850px) {
-  header .normal-menu {
+  header .normal-menu, header .footer-menu {
     display: none; } }
 
-header .normal-menu li {
+header .normal-menu li, header .footer-menu li {
   font-family: vazir-bold;
   display: inline-block; }
-  header .normal-menu li a {
+  header .normal-menu li a, header .footer-menu li a {
     display: inline-block;
     padding: 7px 8px;
     font-size: 0.9em;
     color: #888181; }
-    header .normal-menu li a:hover {
+    header .normal-menu li a:hover, header .footer-menu li a:hover {
       color: #363333; }
-    header .normal-menu li a i {
+    header .normal-menu li a i, header .footer-menu li a i {
       color: #000; }
 
 @media screen and (min-width: 850px) {
@@ -980,7 +1011,7 @@ main {
   position: relative; }
   .speacial-news .container {
     background-color: #fff; }
-  .speacial-news .main-header {
+  .speacial-news header {
     margin-top: 16px;
     padding: 10px;
     border-bottom: 2px solid #f2f2f2;
@@ -1301,27 +1332,13 @@ main {
     .top-news-more .top-news-left a {
       color: #fff; }
 
-.right-column {
+.more-right {
+  width: 100%;
   position: relative;
   padding-bottom: 30px;
   background-color: #fff;
-  margin-top: 16px;
-  display: inline-block; }
-  .right-column .more-news-content {
-    width: 50%;
-    padding: 10px;
-    float: right;
-    position: relative; }
-    .right-column .more-news-content .more-news-details {
-      background-color: rgba(0, 0, 0, 0.7);
-      width: 89%;
-      color: #fff;
-      padding: 5px;
-      font-size: 0.6em;
-      position: absolute;
-      bottom: 20px;
-      right: 10px; }
-  .right-column header {
+  margin-top: 16px; }
+  .more-right header {
     margin-top: 16px;
     padding: 10px;
     border-bottom: 2px solid #f2f2f2;
@@ -1329,31 +1346,44 @@ main {
     background-color: #fff;
     font-size: 1.3em;
     margin-top: 0; }
-  .right-column .more {
+  .more-right .more-news-content {
+    width: 50%;
+    float: right;
+    position: relative; }
+    .more-right .more-news-content .more-news-details {
+      background-color: rgba(0, 0, 0, 0.7);
+      width: 100%;
+      color: #fff;
+      font-size: 0.6em;
+      position: absolute;
+      bottom: 20px; }
+  .more-right .more {
     position: absolute;
     left: 15px;
     bottom: 10px; }
-    .right-column .more i {
+    .more-right .more i {
       text-align: left;
       font-size: 1em;
       color: #b50000; }
-    .right-column .more i {
+    .more-right .more i {
       color: #098b54; }
+  .more-right ul {
+    padding: 10px; }
   @media screen and (min-width: 650px) {
-    .right-column {
+    .more-right {
       float: right;
       width: 43%; } }
 
-.mid-column:hover h3 a {
+.more-mid:hover h3 a {
   color: #098b54; }
 
-.mid-column h3 a {
+.more-mid h3 a {
   padding: 22px 10px; }
 
-.mid-column img {
+.more-mid img {
   padding: 10px; }
 
-.mid-column header {
+.more-mid header {
   margin-top: 16px;
   padding: 10px;
   border-bottom: 2px solid #f2f2f2;
@@ -1361,55 +1391,47 @@ main {
   background-color: #fff;
   font-size: 1.3em; }
 
-.mid-column .mid-column-content {
+.more-mid .mid-column-content {
   background-color: #fff; }
 
 @media screen and (min-width: 650px) {
-  .mid-column {
+  .more-mid {
     float: right;
     width: 57%;
     padding-right: 15px; }
-    .mid-column h3 a {
+    .more-mid h3 a {
       padding: 22px 10px; } }
 
 @media screen and (min-width: 850px) {
-  .mid-column {
+  .more-mid {
     float: left;
     padding: 0 15px; } }
-
-.more-news::after {
-  clear: both;
-  display: block;
-  content: ""; }
 
 .more-news {
   width: 100%; }
   @media screen and (min-width: 850px) {
     .more-news {
       width: 70%;
-      display: inline-block; } }
+      float: right; } }
 
-.left-column {
+.more-left {
   position: relative;
   padding-bottom: 30px;
   background-color: #fff;
   margin-top: 16px;
-  display: inline-block; }
-  .left-column .more-news-content {
+  float: left; }
+  .more-left .more-news-content {
     width: 50%;
-    padding: 10px;
     float: right;
     position: relative; }
-    .left-column .more-news-content .more-news-details {
+    .more-left .more-news-content .more-news-details {
       background-color: rgba(0, 0, 0, 0.7);
-      width: 89%;
+      width: 100%;
       color: #fff;
-      padding: 5px;
       font-size: 0.6em;
       position: absolute;
-      bottom: 20px;
-      right: 10px; }
-  .left-column header {
+      bottom: 20px; }
+  .more-left header {
     margin-top: 16px;
     padding: 10px;
     border-bottom: 2px solid #f2f2f2;
@@ -1417,43 +1439,43 @@ main {
     background-color: #fff;
     font-size: 1.3em;
     margin-top: 0; }
-  .left-column .more {
+  .more-left .more {
     position: absolute;
     left: 15px;
     bottom: 10px; }
-    .left-column .more i {
+    .more-left .more i {
       text-align: left;
       font-size: 1em;
       color: #b50000; }
-    .left-column .more i {
+    .more-left .more i {
       color: #098b54; }
   @media screen and (min-width: 650px) {
-    .left-column {
+    .more-left {
       width: 100%; } }
   @media screen and (min-width: 850px) {
-    .left-column {
+    .more-left {
       width: 30%;
       float: left; } }
 
 footer {
   text-align: center; }
   @media screen and (max-width: 850px) {
-    footer .normal-menu {
+    footer .normal-menu, footer .footer-menu {
       display: none; } }
-  footer .normal-menu li {
+  footer .normal-menu li, footer .footer-menu li {
     font-family: vazir-bold;
     display: inline-block; }
-    footer .normal-menu li a {
+    footer .normal-menu li a, footer .footer-menu li a {
       display: inline-block;
       padding: 7px 8px;
       font-size: 0.9em;
       color: #888181; }
-      footer .normal-menu li a:hover {
+      footer .normal-menu li a:hover, footer .footer-menu li a:hover {
         color: #363333; }
-      footer .normal-menu li a i {
+      footer .normal-menu li a i, footer .footer-menu li a i {
         color: #000; }
   @media screen and (max-width: 850px) {
-    footer .normal-menu {
+    footer .normal-menu, footer .footer-menu {
       display: block; } }
   footer nav {
     background-color: #000; }
@@ -1464,13 +1486,31 @@ footer {
         color: #b50000 !important; }
   footer .footer-part2 {
     background-color: #b50000; }
+    footer .footer-part2 img {
+      width: 40%;
+      margin: 0 auto;
+      padding: 10px 0; }
     footer .footer-part2 .creator {
       font-size: 1.3em; }
+      @media screen and (min-width: 850px) {
+        footer .footer-part2 .creator {
+          width: 50%;
+          float: right;
+          text-align: left;
+          margin-right: 60px; }
+          footer .footer-part2 .creator img {
+            width: 40%;
+            margin: 0; } }
     footer .footer-part2 .social {
       text-align: center; }
       @media screen and (min-width: 850px) {
         footer .footer-part2 .social {
-          text-align: left; } }
+          text-align: left;
+          float: left;
+          padding: 10px 0;
+          font-size: 1.2em;
+          margin-left: 53px;
+          margin-top: 8px; } }
       footer .footer-part2 .social li {
         display: inline-block; }
         footer .footer-part2 .social li a {

@@ -10,13 +10,13 @@
     float: right;
     padding-left: 15px;
   }
-  .news-code {
+  .tools {
     padding: 10px;
     display: block;
     font-size: 1.1em;
     text-align: center;
     border-bottom: 1px solid $gray-nav;
-    .news-code-content {
+    .tools-content {
       padding: 10px 0;
       @media screen and (min-width: 850px) {
         float: right;
@@ -58,15 +58,57 @@
     img {
       padding: $space-lg-bt;
     }
-    .more {
+    .echo-details {
       p {
         font-size: 0.9em;
       }
       padding: $space-md-bt;
-      img {
+      .pic-echo {
         padding: 20px 125px;
         @media screen and (min-width: 850px) {
           padding: 20px 200px;
+        }
+      }
+      audio {
+        width: 100%;
+        margin: $space-md-bt;
+      }
+
+      video {
+        width: 100%;
+      }
+
+      table {
+        width: 100%;
+        text-align: center;
+        border-collapse: collapse;
+        margin: 30px 0;
+        font-size: 0.9em;
+        thead {
+          background-color: #9e1d23;
+          color: white;
+        }
+        tr:nth-child(even) {
+          background-color: #cf9b9e;
+          color: white;
+        }
+        td{
+          padding: 7px 10px;
+        }
+      }
+
+      ul {
+        margin: 20px 0;
+        a {
+          display: inline-block;
+          padding: 5px 15px;
+          margin: 3px 0;
+          color: #756e75;
+          border-radius: 10px;
+          &:hover{
+            background-color: $red;
+            color: $white;
+          }
         }
       }
     }
@@ -80,6 +122,7 @@
     .read-more-title {
       img {
         width: 30px;
+        padding: 0;
         float: right;
       }
       h3 {
@@ -101,21 +144,21 @@
     }
   }
 
-  .short-link {
-    .short-link-tag {
-      background-color: $Purple;
-      border-radius: 30px;
-      display: inline-block;
-      padding: 3px 10px;
-      margin: $space-lg-bt;
-      i {
-        padding-left: 5px;
-      }
-      a {
-        color: $white;
-        font-size: 0.7em;
-      }
+  .tags {
+    background-color: $Purple;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 3px 10px;
+    margin: $space-lg-bt;
+    i {
+      padding-left: 5px;
     }
+    a {
+      color: $white;
+      font-size: 0.7em;
+    }
+  }
+  .short-link {
     .short-link-right {
       text-align: center;
       border: 1px solid $gray-border;

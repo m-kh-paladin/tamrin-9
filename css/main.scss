@@ -2,7 +2,7 @@
 @import "./global.scss";
 @import "../node_modules/font-awesome/css/font-awesome.min.css";
 @import "./news.scss";
-@import "./economic.scss";
+@import "./landing.scss";
 @import "./tags.scss";
 
 header {
@@ -94,7 +94,7 @@ main {
   .container {
     background-color: $white;
   }
-  .main-header {
+  header {
     @include header();
   }
   .more {
@@ -310,23 +310,28 @@ main {
 }
 
 //////////////////////////////more-news
-.right-column {
-  position: relative;
-  padding-bottom: 30px;
-  background-color: $white;
-  margin-top: 16px;
-  display: inline-block;
-  @include more-news();
+
+.more-right {
   header {
     @include header();
     margin-top: 0;
   }
+  width: 100%;
+  position: relative;
+  padding-bottom: 30px;
+  background-color: $white;
+  margin-top: 16px;
+  @include more-news();
   .more {
     @include arrow-icon();
     i {
       color: $green;
     }
   }
+  ul {
+    padding: 10px;
+  }
+
 
   @media screen and(min-width:650px) {
     float: right;
@@ -335,7 +340,7 @@ main {
 }
 
 ///////////////////mid
-.mid-column {
+.more-mid {
   @include section_hover();
 
   h3 a {
@@ -365,31 +370,31 @@ main {
     padding: 0 15px;
   }
 }
-.more-news::after {
-  @include clear();
-}
 
 .more-news {
   width: 100%;
 
   @media screen and(min-width:850px) {
     width: 70%;
-    display: inline-block;
+    float: right;
   }
 }
+
 /////////////////left
-.left-column {
+
+.more-left {
   position: relative;
   padding-bottom: 30px;
   background-color: $white;
   margin-top: 16px;
-  display: inline-block;
   @include more-news();
+  float: left;
 
   header {
     @include header();
     margin-top: 0;
   }
+
   .more {
     @include arrow-icon();
     i {
