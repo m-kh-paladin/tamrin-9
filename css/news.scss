@@ -41,7 +41,7 @@
       }
     }
   }
-  .first-section {
+  .first-content {
     margin-top: $space-top;
     h2 a {
       padding: 0 10px;
@@ -64,9 +64,13 @@
       }
       padding: $space-md-bt;
       .pic-echo {
-        padding: 20px 125px;
-        @media screen and (min-width: 850px) {
-          padding: 20px 200px;
+        img {
+          width: 40%;
+        }
+        padding: $space-lg-bt;
+        img {
+          margin: 0 auto;
+          padding: 0;
         }
       }
       audio {
@@ -92,23 +96,22 @@
           background-color: #cf9b9e;
           color: white;
         }
-        td{
+        td {
           padding: 7px 10px;
         }
       }
 
-      ul {
-        margin: 20px 0;
+      li {
+        padding: 10px 0;
+      }
+      li i {
+        color: $Purple;
+        font-size: 0.6em;
+        float: right;
+        padding-top: 7px;
+        padding-left: 7px;
         a {
           display: inline-block;
-          padding: 5px 15px;
-          margin: 3px 0;
-          color: #756e75;
-          border-radius: 10px;
-          &:hover{
-            background-color: $red;
-            color: $white;
-          }
         }
       }
     }
@@ -141,6 +144,9 @@
         font-size: 0.9em;
         font-weight: normal;
       }
+      li {
+        padding: 4px;
+      }
     }
   }
 
@@ -165,8 +171,9 @@
       border-radius: 15px;
       padding: 5px;
       margin: $space-md-bt;
-      @media screen and (min-width: 850px) {
-        width: 60%;
+      @media screen and (min-width: 550px) {
+        width: 70%;
+        margin-top: 25px;
         float: right;
       }
       i {
@@ -190,7 +197,7 @@
         li {
           display: inline-block;
           a {
-            font-size: 1.2em;
+            font-size: 2em;
             padding: 5px;
             .fa-facebook {
               color: #3b5998;
@@ -292,7 +299,7 @@
     ul {
       padding: 10px;
       li {
-        margin-bottom: 7px;
+        padding: 8px 0;
       }
     }
     .media-right {

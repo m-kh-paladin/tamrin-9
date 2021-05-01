@@ -120,18 +120,20 @@ $vazir-bold: vazir-bold;
 
 @mixin more-news {
   .more-news-content {
-    width: 50%;
+    width: 100%;
     float: right;
     position: relative;
-
 
     .more-news-details {
       background-color: rgba(0, 0, 0, 0.7);
       width: 100%;
-      color: $white;
-      font-size: 0.6em;
       position: absolute;
       bottom: 20px;
+      a {
+        color: $white;
+        font-size: 0.7em;
+        padding: 4px 4px;
+      }
     }
   }
 }
@@ -236,7 +238,8 @@ $vazir-bold: vazir-bold;
     }
   }
   ///////////////////////////////////////////////// NORMAL - MENU
-  .normal-menu , .footer-menu{
+  .normal-menu,
+  .footer-menu {
     @include menu();
   }
   ///////////////////////////////////////////////// RESPONSIVE - MENU
@@ -285,7 +288,8 @@ $vazir-bold: vazir-bold;
 }
 //////////////////////////footer
 @mixin footer {
-  .normal-menu , .footer-menu {
+  .normal-menu,
+  .footer-menu {
     @include menu();
     @media screen and(max-width:850px) {
       display: block;
@@ -307,22 +311,19 @@ $vazir-bold: vazir-bold;
 
   .footer-part2 {
     background-color: $red;
-    img{
-      width: 40%;
-      margin: 0 auto;
-      padding: 10px 0;
+    img {
+      width: 100%;
     }
-    .creator {
+    .footer-logo {
       font-size: 1.3em;
+      width: 60%;
+      margin: 0 auto;
+      padding: $space-md-bt;
       @media screen and(min-width:850px) {
-        width: 50%;
+        width: 20%;
+        padding: 10px;
+        margin-right: 40px;
         float: right;
-        text-align: left;
-        margin-right: 60px;
-        img{
-          width: 40%;
-          margin: 0;
-        }
       }
     }
     .social {
@@ -357,12 +358,16 @@ $vazir-bold: vazir-bold;
   border-top: 3px solid $Purple;
   margin-top: $space-top;
 
-  h4 a {
+  header a {
     color: $Purple;
-    font-size: 1.1em;
   }
   li {
     padding: 10px 0;
+    &:hover{
+      a{
+        color: $red;
+      }
+    }
   }
   li i {
     color: $Purple;

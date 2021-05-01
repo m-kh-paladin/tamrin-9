@@ -310,105 +310,94 @@ main {
 }
 
 //////////////////////////////more-news
-
-.more-right {
-  header {
-    @include header();
-    margin-top: 0;
-  }
-  width: 100%;
-  position: relative;
-  padding-bottom: 30px;
-  background-color: $white;
-  margin-top: 16px;
-  @include more-news();
-  .more {
-    @include arrow-icon();
-    i {
-      color: $green;
-    }
-  }
-  ul {
-    padding: 10px;
-  }
-
-
-  @media screen and(min-width:650px) {
-    float: right;
-    width: 43%;
-  }
-}
-
-///////////////////mid
-.more-mid {
-  @include section_hover();
-
-  h3 a {
-    padding: 22px 10px;
-  }
-  img {
-    padding: $space-allside;
-  }
-  header {
-    @include header();
-  }
-  .mid-column-content {
-    background-color: $white;
-  }
-
-  @media screen and(min-width:650px) {
-    float: right;
-    width: 57%;
-    padding-right: 15px;
-    h3 a {
-      padding: 22px 10px;
-    }
-  }
-
-  @media screen and(min-width:850px) {
-    float: left;
-    padding: 0 15px;
-  }
-}
-
 .more-news {
-  width: 100%;
+  .more-right {
+    @media screen and(min-width:850px) {
+      width: 70%;
+      float: right;
+    }
+    .mr-right {
+      header {
+        @include header();
+      }
+      .mr-col-right {
+        position: relative;
+        background-color: $white;
+        padding-bottom: 30px;
+      }
+      .more {
+        @include arrow-icon();
+        i {
+          color: $green;
+        }
+      }
 
-  @media screen and(min-width:850px) {
-    width: 70%;
-    float: right;
-  }
-}
+      ul {
+        padding: 5px;
+      }
 
-/////////////////left
-
-.more-left {
-  position: relative;
-  padding-bottom: 30px;
-  background-color: $white;
-  margin-top: 16px;
-  @include more-news();
-  float: left;
-
-  header {
-    @include header();
-    margin-top: 0;
-  }
-
-  .more {
-    @include arrow-icon();
-    i {
-      color: $green;
+      li {
+        width: 50%;
+        float: right;
+        padding: 5px;
+        @include more-news();
+      }
+      @media screen and(min-width:650px) {
+        width: 43%;
+        float: right;
+      }
+    }
+    .mr-left {
+      header {
+        @include header();
+      }
+      .face-news-details {
+        padding: 10px;
+        background-color: $white;
+        h3 {
+          padding: $space-lg-bt;
+        }
+        time {
+          @include time();
+        }
+      }
+      @media screen and(min-width:650px) {
+        width: 57%;
+        float: right;
+        padding: 0 10px;
+      }
     }
   }
+  .more-left {
+    @media screen and(min-width:850px) {
+      width: 30%;
+      float: left;
+    }
 
-  @media screen and(min-width:650px) {
-    width: 100%;
-  }
+    .mr-col-left {
+      position: relative;
+      padding-bottom: 30px;
+      background-color: $white;
+      .more {
+        @include arrow-icon();
+        i {
+          color: $green;
+        }
+      }
+    }
+    header {
+      @include header();
+    }
+    ul {
+      padding: 5px;
+    }
 
-  @media screen and(min-width:850px) {
-    width: 30%;
-    float: left;
+    li {
+      width: 50%;
+      float: right;
+      padding: 5px;
+      @include more-news();
+    }
   }
 }
 
@@ -417,3 +406,4 @@ main {
 footer {
   @include footer();
 }
+

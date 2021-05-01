@@ -152,59 +152,60 @@ main {
         float: left;
         font-size: 0.8em; } }
 
-.col-right .first-section {
+.col-right .first-content {
   margin-top: 16px; }
-  .col-right .first-section h2 a {
+  .col-right .first-content h2 a {
     padding: 0 10px;
     font-size: 0.9em; }
-  .col-right .first-section .first-section-lead {
+  .col-right .first-content .first-section-lead {
     background-color: #fff;
     border-radius: 10px;
     border-right: 3px solid #a72772;
     padding: 25px;
     margin: 12px 0;
     font-size: 0.9em; }
-  .col-right .first-section img {
+  .col-right .first-content img {
     padding: 12px 0; }
-  .col-right .first-section .echo-details {
+  .col-right .first-content .echo-details {
     padding: 10px 0; }
-    .col-right .first-section .echo-details p {
+    .col-right .first-content .echo-details p {
       font-size: 0.9em; }
-    .col-right .first-section .echo-details .pic-echo {
-      padding: 20px 125px; }
-      @media screen and (min-width: 850px) {
-        .col-right .first-section .echo-details .pic-echo {
-          padding: 20px 200px; } }
-    .col-right .first-section .echo-details audio {
+    .col-right .first-content .echo-details .pic-echo {
+      padding: 12px 0; }
+      .col-right .first-content .echo-details .pic-echo img {
+        width: 40%; }
+      .col-right .first-content .echo-details .pic-echo img {
+        margin: 0 auto;
+        padding: 0; }
+    .col-right .first-content .echo-details audio {
       width: 100%;
       margin: 10px 0; }
-    .col-right .first-section .echo-details video {
+    .col-right .first-content .echo-details video {
       width: 100%; }
-    .col-right .first-section .echo-details table {
+    .col-right .first-content .echo-details table {
       width: 100%;
       text-align: center;
       border-collapse: collapse;
       margin: 30px 0;
       font-size: 0.9em; }
-      .col-right .first-section .echo-details table thead {
+      .col-right .first-content .echo-details table thead {
         background-color: #9e1d23;
         color: white; }
-      .col-right .first-section .echo-details table tr:nth-child(even) {
+      .col-right .first-content .echo-details table tr:nth-child(even) {
         background-color: #cf9b9e;
         color: white; }
-      .col-right .first-section .echo-details table td {
+      .col-right .first-content .echo-details table td {
         padding: 7px 10px; }
-    .col-right .first-section .echo-details ul {
-      margin: 20px 0; }
-      .col-right .first-section .echo-details ul a {
-        display: inline-block;
-        padding: 5px 15px;
-        margin: 3px 0;
-        color: #756e75;
-        border-radius: 10px; }
-        .col-right .first-section .echo-details ul a:hover {
-          background-color: #b50000;
-          color: #fff; }
+    .col-right .first-content .echo-details li {
+      padding: 10px 0; }
+    .col-right .first-content .echo-details li i {
+      color: #a72772;
+      font-size: 0.6em;
+      float: right;
+      padding-top: 7px;
+      padding-left: 7px; }
+      .col-right .first-content .echo-details li i a {
+        display: inline-block; }
 
 .col-right .read-more {
   padding: 25px 0; }
@@ -225,6 +226,8 @@ main {
       padding: 5px 0;
       font-size: 0.9em;
       font-weight: normal; }
+    .col-right .read-more .read-more-lead li {
+      padding: 4px; }
 
 .col-right .tags {
   background-color: #a72772;
@@ -244,9 +247,10 @@ main {
   border-radius: 15px;
   padding: 5px;
   margin: 10px 0; }
-  @media screen and (min-width: 850px) {
+  @media screen and (min-width: 550px) {
     .col-right .short-link .short-link-right {
-      width: 60%;
+      width: 70%;
+      margin-top: 25px;
       float: right; } }
   .col-right .short-link .short-link-right i {
     display: inline;
@@ -266,7 +270,7 @@ main {
   .col-right .short-link .short-link-left ul li {
     display: inline-block; }
     .col-right .short-link .short-link-left ul li a {
-      font-size: 1.2em;
+      font-size: 2em;
       padding: 5px; }
       .col-right .short-link .short-link-left ul li a .fa-facebook {
         color: #3b5998; }
@@ -281,11 +285,12 @@ main {
   border-radius: 10px;
   border-top: 3px solid #a72772;
   margin-top: 16px; }
-  .col-right .news-inner h4 a {
-    color: #a72772;
-    font-size: 1.1em; }
+  .col-right .news-inner header a {
+    color: #a72772; }
   .col-right .news-inner li {
     padding: 10px 0; }
+    .col-right .news-inner li:hover a {
+      color: #b50000; }
   .col-right .news-inner li i {
     color: #a72772;
     font-size: 0.6em;
@@ -352,11 +357,12 @@ main {
   border-radius: 10px;
   border-top: 3px solid #a72772;
   margin-top: 16px; }
-  .col-left .last-news-inner h4 a {
-    color: #a72772;
-    font-size: 1.1em; }
+  .col-left .last-news-inner header a {
+    color: #a72772; }
   .col-left .last-news-inner li {
     padding: 10px 0; }
+    .col-left .last-news-inner li:hover a {
+      color: #b50000; }
   .col-left .last-news-inner li i {
     color: #a72772;
     font-size: 0.6em;
@@ -372,11 +378,12 @@ main {
   border-radius: 10px;
   border-top: 3px solid #a72772;
   margin-top: 16px; }
-  .col-left .economic-news-inner h4 a {
-    color: #a72772;
-    font-size: 1.1em; }
+  .col-left .economic-news-inner header a {
+    color: #a72772; }
   .col-left .economic-news-inner li {
     padding: 10px 0; }
+    .col-left .economic-news-inner li:hover a {
+      color: #b50000; }
   .col-left .economic-news-inner li i {
     color: #a72772;
     font-size: 0.6em;
@@ -398,7 +405,7 @@ main {
   .col-left .more-media ul {
     padding: 10px; }
     .col-left .more-media ul li {
-      margin-bottom: 7px; }
+      padding: 8px 0; }
   .col-left .more-media .media-right {
     width: 40%;
     float: right;
@@ -882,20 +889,25 @@ header .logo {
     padding-top: 4px; }
 
 @media screen and (max-width: 850px) {
-  header .normal-menu, header .footer-menu {
+  header .normal-menu,
+  header .footer-menu {
     display: none; } }
 
-header .normal-menu li, header .footer-menu li {
+header .normal-menu li,
+header .footer-menu li {
   font-family: vazir-bold;
   display: inline-block; }
-  header .normal-menu li a, header .footer-menu li a {
+  header .normal-menu li a,
+  header .footer-menu li a {
     display: inline-block;
     padding: 7px 8px;
     font-size: 0.9em;
     color: #888181; }
-    header .normal-menu li a:hover, header .footer-menu li a:hover {
+    header .normal-menu li a:hover,
+    header .footer-menu li a:hover {
       color: #363333; }
-    header .normal-menu li a i, header .footer-menu li a i {
+    header .normal-menu li a i,
+    header .footer-menu li a i {
       color: #000; }
 
 @media screen and (min-width: 850px) {
@@ -1332,58 +1344,12 @@ main {
     .top-news-more .top-news-left a {
       color: #fff; }
 
-.more-right {
-  width: 100%;
-  position: relative;
-  padding-bottom: 30px;
-  background-color: #fff;
-  margin-top: 16px; }
-  .more-right header {
-    margin-top: 16px;
-    padding: 10px;
-    border-bottom: 2px solid #f2f2f2;
-    border-top: 5px solid #098b54;
-    background-color: #fff;
-    font-size: 1.3em;
-    margin-top: 0; }
-  .more-right .more-news-content {
-    width: 50%;
-    float: right;
-    position: relative; }
-    .more-right .more-news-content .more-news-details {
-      background-color: rgba(0, 0, 0, 0.7);
-      width: 100%;
-      color: #fff;
-      font-size: 0.6em;
-      position: absolute;
-      bottom: 20px; }
-  .more-right .more {
-    position: absolute;
-    left: 15px;
-    bottom: 10px; }
-    .more-right .more i {
-      text-align: left;
-      font-size: 1em;
-      color: #b50000; }
-    .more-right .more i {
-      color: #098b54; }
-  .more-right ul {
-    padding: 10px; }
-  @media screen and (min-width: 650px) {
-    .more-right {
-      float: right;
-      width: 43%; } }
+@media screen and (min-width: 850px) {
+  .more-news .more-right {
+    width: 70%;
+    float: right; } }
 
-.more-mid:hover h3 a {
-  color: #098b54; }
-
-.more-mid h3 a {
-  padding: 22px 10px; }
-
-.more-mid img {
-  padding: 10px; }
-
-.more-mid header {
+.more-news .more-right .mr-right header {
   margin-top: 16px;
   padding: 10px;
   border-bottom: 2px solid #f2f2f2;
@@ -1391,91 +1357,149 @@ main {
   background-color: #fff;
   font-size: 1.3em; }
 
-.more-mid .mid-column-content {
-  background-color: #fff; }
-
-@media screen and (min-width: 650px) {
-  .more-mid {
-    float: right;
-    width: 57%;
-    padding-right: 15px; }
-    .more-mid h3 a {
-      padding: 22px 10px; } }
-
-@media screen and (min-width: 850px) {
-  .more-mid {
-    float: left;
-    padding: 0 15px; } }
-
-.more-news {
-  width: 100%; }
-  @media screen and (min-width: 850px) {
-    .more-news {
-      width: 70%;
-      float: right; } }
-
-.more-left {
+.more-news .more-right .mr-right .mr-col-right {
   position: relative;
-  padding-bottom: 30px;
   background-color: #fff;
-  margin-top: 16px;
-  float: left; }
-  .more-left .more-news-content {
-    width: 50%;
+  padding-bottom: 30px; }
+
+.more-news .more-right .mr-right .more {
+  position: absolute;
+  left: 15px;
+  bottom: 10px; }
+  .more-news .more-right .mr-right .more i {
+    text-align: left;
+    font-size: 1em;
+    color: #b50000; }
+  .more-news .more-right .mr-right .more i {
+    color: #098b54; }
+
+.more-news .more-right .mr-right ul {
+  padding: 5px; }
+
+.more-news .more-right .mr-right li {
+  width: 50%;
+  float: right;
+  padding: 5px; }
+  .more-news .more-right .mr-right li .more-news-content {
+    width: 100%;
     float: right;
     position: relative; }
-    .more-left .more-news-content .more-news-details {
+    .more-news .more-right .mr-right li .more-news-content .more-news-details {
       background-color: rgba(0, 0, 0, 0.7);
       width: 100%;
-      color: #fff;
-      font-size: 0.6em;
       position: absolute;
       bottom: 20px; }
-  .more-left header {
-    margin-top: 16px;
-    padding: 10px;
-    border-bottom: 2px solid #f2f2f2;
-    border-top: 5px solid #098b54;
-    background-color: #fff;
-    font-size: 1.3em;
-    margin-top: 0; }
-  .more-left .more {
+      .more-news .more-right .mr-right li .more-news-content .more-news-details a {
+        color: #fff;
+        font-size: 0.7em;
+        padding: 4px 4px; }
+
+@media screen and (min-width: 650px) {
+  .more-news .more-right .mr-right {
+    width: 43%;
+    float: right; } }
+
+.more-news .more-right .mr-left header {
+  margin-top: 16px;
+  padding: 10px;
+  border-bottom: 2px solid #f2f2f2;
+  border-top: 5px solid #098b54;
+  background-color: #fff;
+  font-size: 1.3em; }
+
+.more-news .more-right .mr-left .face-news-details {
+  padding: 10px;
+  background-color: #fff; }
+  .more-news .more-right .mr-left .face-news-details h3 {
+    padding: 12px 0; }
+  .more-news .more-right .mr-left .face-news-details time {
+    font-size: 0.9em;
+    background-color: #b50000;
+    color: #fff;
+    padding: 4px;
+    margin: 10px;
+    display: inline-block; }
+
+@media screen and (min-width: 650px) {
+  .more-news .more-right .mr-left {
+    width: 57%;
+    float: right;
+    padding: 0 10px; } }
+
+@media screen and (min-width: 850px) {
+  .more-news .more-left {
+    width: 30%;
+    float: left; } }
+
+.more-news .more-left .mr-col-left {
+  position: relative;
+  padding-bottom: 30px;
+  background-color: #fff; }
+  .more-news .more-left .mr-col-left .more {
     position: absolute;
     left: 15px;
     bottom: 10px; }
-    .more-left .more i {
+    .more-news .more-left .mr-col-left .more i {
       text-align: left;
       font-size: 1em;
       color: #b50000; }
-    .more-left .more i {
+    .more-news .more-left .mr-col-left .more i {
       color: #098b54; }
-  @media screen and (min-width: 650px) {
-    .more-left {
-      width: 100%; } }
-  @media screen and (min-width: 850px) {
-    .more-left {
-      width: 30%;
-      float: left; } }
+
+.more-news .more-left header {
+  margin-top: 16px;
+  padding: 10px;
+  border-bottom: 2px solid #f2f2f2;
+  border-top: 5px solid #098b54;
+  background-color: #fff;
+  font-size: 1.3em; }
+
+.more-news .more-left ul {
+  padding: 5px; }
+
+.more-news .more-left li {
+  width: 50%;
+  float: right;
+  padding: 5px; }
+  .more-news .more-left li .more-news-content {
+    width: 100%;
+    float: right;
+    position: relative; }
+    .more-news .more-left li .more-news-content .more-news-details {
+      background-color: rgba(0, 0, 0, 0.7);
+      width: 100%;
+      position: absolute;
+      bottom: 20px; }
+      .more-news .more-left li .more-news-content .more-news-details a {
+        color: #fff;
+        font-size: 0.7em;
+        padding: 4px 4px; }
 
 footer {
   text-align: center; }
   @media screen and (max-width: 850px) {
-    footer .normal-menu, footer .footer-menu {
+    footer .normal-menu,
+    footer .footer-menu {
       display: none; } }
-  footer .normal-menu li, footer .footer-menu li {
+  footer .normal-menu li,
+  footer .footer-menu li {
     font-family: vazir-bold;
     display: inline-block; }
-    footer .normal-menu li a, footer .footer-menu li a {
+    footer .normal-menu li a,
+    footer .footer-menu li a {
       display: inline-block;
       padding: 7px 8px;
       font-size: 0.9em;
       color: #888181; }
-      footer .normal-menu li a:hover, footer .footer-menu li a:hover {
+      footer .normal-menu li a:hover,
+      footer .footer-menu li a:hover {
         color: #363333; }
-      footer .normal-menu li a i, footer .footer-menu li a i {
+      footer .normal-menu li a i,
+      footer .footer-menu li a i {
         color: #000; }
   @media screen and (max-width: 850px) {
-    footer .normal-menu, footer .footer-menu {
+    footer .normal-menu,
+    footer .footer-menu {
       display: block; } }
   footer nav {
     background-color: #000; }
@@ -1487,20 +1511,18 @@ footer {
   footer .footer-part2 {
     background-color: #b50000; }
     footer .footer-part2 img {
-      width: 40%;
+      width: 100%; }
+    footer .footer-part2 .footer-logo {
+      font-size: 1.3em;
+      width: 60%;
       margin: 0 auto;
       padding: 10px 0; }
-    footer .footer-part2 .creator {
-      font-size: 1.3em; }
       @media screen and (min-width: 850px) {
-        footer .footer-part2 .creator {
-          width: 50%;
-          float: right;
-          text-align: left;
-          margin-right: 60px; }
-          footer .footer-part2 .creator img {
-            width: 40%;
-            margin: 0; } }
+        footer .footer-part2 .footer-logo {
+          width: 20%;
+          padding: 10px;
+          margin-right: 40px;
+          float: right; } }
     footer .footer-part2 .social {
       text-align: center; }
       @media screen and (min-width: 850px) {
