@@ -53,3 +53,12 @@ main {
   src: url("../fonts/Vazir-Bold.woff");
   src: url("../fonts/Vazir-Bold.woff2");
 }
+
+.res{
+  display: block;
+  img{
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
