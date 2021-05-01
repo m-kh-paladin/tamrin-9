@@ -363,7 +363,7 @@ main {
         }
       }
       @media screen and(min-width:650px) {
-        max-height: 412px;
+        min-height: 412px;
         width: 57%;
         float: right;
         padding: 0 10px;
