@@ -168,12 +168,14 @@ main {
     padding: 12px 0; }
   .col-right .first-content .echo-details {
     padding: 10px 0; }
+    .col-right .first-content .echo-details a {
+      color: coral; }
     .col-right .first-content .echo-details p {
       font-size: 0.9em; }
     .col-right .first-content .echo-details .pic-echo {
       padding: 12px 0; }
       .col-right .first-content .echo-details .pic-echo img {
-        width: 40%; }
+        width: 45%; }
       .col-right .first-content .echo-details .pic-echo img {
         margin: 0 auto;
         padding: 0; }
@@ -198,8 +200,9 @@ main {
         padding: 7px 10px; }
     .col-right .first-content .echo-details li {
       padding: 10px 0; }
+      .col-right .first-content .echo-details li a {
+        color: #a72772; }
     .col-right .first-content .echo-details li i {
-      color: #a72772;
       font-size: 0.6em;
       float: right;
       padding-top: 7px;
@@ -235,11 +238,11 @@ main {
   display: inline-block;
   padding: 3px 10px;
   margin: 12px 0; }
+  .col-right .tags a {
+    color: #fff !important;
+    font-size: 0.7em; }
   .col-right .tags i {
     padding-left: 5px; }
-  .col-right .tags a {
-    color: #fff;
-    font-size: 0.7em; }
 
 .col-right .short-link .short-link-right {
   text-align: center;
@@ -1360,7 +1363,7 @@ main {
 .more-news .more-right .mr-right .mr-col-right {
   position: relative;
   background-color: #fff;
-  padding-bottom: 30px; }
+  padding-bottom: 50px; }
 
 .more-news .more-right .mr-right .more {
   position: absolute;
@@ -1407,24 +1410,28 @@ main {
   background-color: #fff;
   font-size: 1.3em; }
 
-.more-news .more-right .mr-left .face-news-details {
+.more-news .more-right .mr-left .mr-left-details {
   padding: 10px;
   background-color: #fff; }
-  .more-news .more-right .mr-left .face-news-details h3 {
+  .more-news .more-right .mr-left .mr-left-details h3 {
     padding: 12px 0; }
-  .more-news .more-right .mr-left .face-news-details time {
+  .more-news .more-right .mr-left .mr-left-details time {
     font-size: 0.9em;
     background-color: #b50000;
     color: #fff;
     padding: 4px;
     margin: 10px;
-    display: inline-block; }
+    display: inline-block;
+    margin: 0; }
 
 @media screen and (min-width: 650px) {
   .more-news .more-right .mr-left {
+    max-height: 412px;
     width: 57%;
     float: right;
-    padding: 0 10px; } }
+    padding: 0 10px; }
+    .more-news .more-right .mr-left time {
+      margin: 10px; } }
 
 @media screen and (min-width: 850px) {
   .more-news .more-left {
@@ -1433,7 +1440,7 @@ main {
 
 .more-news .more-left .mr-col-left {
   position: relative;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   background-color: #fff; }
   .more-news .more-left .mr-col-left .more {
     position: absolute;

@@ -323,7 +323,7 @@ main {
       .mr-col-right {
         position: relative;
         background-color: $white;
-        padding-bottom: 30px;
+        padding-bottom: 50px;
       }
       .more {
         @include arrow-icon();
@@ -351,7 +351,7 @@ main {
       header {
         @include header();
       }
-      .face-news-details {
+      .mr-left-details {
         padding: 10px;
         background-color: $white;
         h3 {
@@ -359,12 +359,17 @@ main {
         }
         time {
           @include time();
+          margin: 0;
         }
       }
       @media screen and(min-width:650px) {
+        max-height: 412px;
         width: 57%;
         float: right;
         padding: 0 10px;
+        time {
+          margin: 10px;
+        }
       }
     }
   }
@@ -376,7 +381,7 @@ main {
 
     .mr-col-left {
       position: relative;
-      padding-bottom: 30px;
+      padding-bottom: 50px;
       background-color: $white;
       .more {
         @include arrow-icon();
@@ -406,4 +411,3 @@ main {
 footer {
   @include footer();
 }
-
