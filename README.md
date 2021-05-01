@@ -1,16 +1,12 @@
-# name project: pendar online
-
+# pendar online
+---
 real design : [pendar](https://www.pendaronline.com/)
- 
+ ---
  for instal project : 
 
-,,,
-1-npm install i
-,,,
+1- `npm install i`
 
-,,,
-3-in next step for run SASS write : npm run scss
-,,,
+2-in next step for run SASS write : `npm run scss`
 
 ### work progression:
 
