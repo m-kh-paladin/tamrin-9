@@ -5,13 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "node-sass -w css/main.scss css/main.css"
+    "sass": "node-sass -w css/main.scss css/main.css",
+    "uglify": " uglifyjs  js/main.js js/main.min.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "font-awesome": "^4.7.0",
+    "grunt-contrib-uglify": "^5.0.1",
     "jquery": "^3.6.0",
-    "node-sass": "^5.0.0"
+    "node-sass": "^5.0.0",
+    "save": "^2.4.0",
+    "uglify-js": "^3.13.5"
   }
 }

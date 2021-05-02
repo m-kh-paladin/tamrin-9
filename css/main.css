@@ -1,15 +1,19 @@
 @import url(../node_modules/font-awesome/css/font-awesome.min.css);
+@import url(../node_modules/font-awesome/css/font-awesome.min.css);
+@import url(../node_modules/font-awesome/css/font-awesome.min.css);
+@import url(../node_modules/font-awesome/css/font-awesome.min.css);
 .search-inp {
+  width: 200px;
+  height: 40px;
   display: none;
   font-family: vazir;
   font-size: 1em;
   background-color: #949090;
   position: absolute;
-  z-index: 1000;
-  padding: 10px 0px; }
-  @media screen and (min-width: 850px) {
-    .search-inp {
-      padding: 23px 5px; } }
+  padding: 5px 10px;
+  z-index: 1000; }
+  .search-inp::placeholder {
+    color: #dbd3d3; }
 
 .more {
   position: absolute;
@@ -41,7 +45,7 @@ li {
   list-style: none; }
 
 img {
-  width: 100%;
+  max-width: 100%;
   display: block;
   height: auto; }
 
@@ -76,56 +80,55 @@ main {
     height: auto;
     display: block; }
 
-.main-column {
-  width: 100%; }
-  @media screen and (min-width: 850px) {
-    .main-column {
-      width: 70%; } }
+.search-inp {
+  width: 200px;
+  height: 40px;
+  display: none;
+  font-family: vazir;
+  font-size: 1em;
+  background-color: #949090;
+  position: absolute;
+  padding: 5px 10px;
+  z-index: 1000; }
+  .search-inp::placeholder {
+    color: #dbd3d3; }
 
-.tags-header {
-  width: 100%;
-  margin-top: 16px;
-  background-color: #d4d4d4;
-  display: inline-block;
-  padding: 7px; }
+.more {
+  position: absolute;
+  left: 15px;
+  bottom: 10px; }
+  .more i {
+    text-align: left;
+    font-size: 1em;
+    color: #b50000; }
+  .more i {
+    color: #098b54; }
 
-.tags ul {
-  margin-top: 16px; }
-  .tags ul li {
-    background-color: #fff;
-    padding: 15px;
-    margin: 12px 0; }
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box; }
 
-@media screen and (min-width: 650px) {
-  .tags .tags-right {
-    width: 30%;
-    float: right;
-    padding-left: 5px; } }
+body {
+  font-family: vazir; }
+  body a {
+    transition: all 0.3s ease-in-out; }
 
-@media screen and (min-width: 850px) {
-  .tags .tags-right {
-    width: 25%; } }
+a {
+  text-decoration: none;
+  color: #000; }
 
-.tags .tags-left h4 {
-  padding: 7px 0; }
+li {
+  list-style: none; }
 
-@media screen and (min-width: 650px) {
-  .tags .tags-left {
-    width: 70%;
-    float: left;
-    padding-right: 5px; } }
-
-@media screen and (min-width: 850px) {
-  .tags .tags-left p {
-    font-size: 0.8em; } }
-
-.tags .reload {
+img {
+  max-width: 100%;
   display: block;
-  text-align: center;
-  background-color: #b50000;
-  color: #fff;
-  padding: 10px 0; }
- 10px 30px; }
+  height: auto; }
+
+main {
+  padding: 0  10px 30px; }
 
 .wrapper {
   max-width: 1200px;
@@ -211,19 +214,12 @@ main {
     .col-right .first-content .echo-details p {
       font-size: 0.9em; }
     .col-right .first-content .echo-details .pic-echo {
-      width: 70%;
-      margin: 16px auto;
+      margin: 16px 0;
       padding: 0; }
-      @media screen and (min-width: 600px) {
-        .col-right .first-content .echo-details .pic-echo {
-          width: 50%; } }
-      @media screen and (min-width: 800px) {
-        .col-right .first-content .echo-details .pic-echo {
-          width: 45%; } }
-      .col-right .first-content .echo-details .pic-echo a {
-        background-color: transparent; }
       .col-right .first-content .echo-details .pic-echo img {
-        padding: 0; }
+        padding: 0;
+        width: auto;
+        margin: 0 auto; }
     .col-right .first-content .echo-details audio {
       width: 100%;
       margin: 10px 0; }
@@ -472,16 +468,17 @@ main {
       color: #b50000; }
 
 .search-inp {
+  width: 200px;
+  height: 40px;
   display: none;
   font-family: vazir;
   font-size: 1em;
   background-color: #949090;
   position: absolute;
-  z-index: 1000;
-  padding: 10px 0px; }
-  @media screen and (min-width: 850px) {
-    .search-inp {
-      padding: 23px 5px; } }
+  padding: 5px 10px;
+  z-index: 1000; }
+  .search-inp::placeholder {
+    color: #dbd3d3; }
 
 .more {
   position: absolute;
@@ -513,7 +510,7 @@ li {
   list-style: none; }
 
 img {
-  width: 100%;
+  max-width: 100%;
   display: block;
   height: auto; }
 
@@ -790,16 +787,17 @@ main {
       margin: 0; }
 
 .search-inp {
+  width: 200px;
+  height: 40px;
   display: none;
   font-family: vazir;
   font-size: 1em;
   background-color: #949090;
   position: absolute;
-  z-index: 1000;
-  padding: 10px 0px; }
-  @media screen and (min-width: 850px) {
-    .search-inp {
-      padding: 23px 5px; } }
+  padding: 5px 10px;
+  z-index: 1000; }
+  .search-inp::placeholder {
+    color: #dbd3d3; }
 
 .more {
   position: absolute;
@@ -831,7 +829,7 @@ li {
   list-style: none; }
 
 img {
-  width: 100%;
+  max-width: 100%;
   display: block;
   height: auto; }
 

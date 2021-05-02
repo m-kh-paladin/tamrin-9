@@ -64,26 +64,18 @@
         background-color: $Purple;
         border-radius: 5px;
         padding: 3px 5px;
-            }
+      }
       p {
         font-size: 0.9em;
       }
       padding: $space-md-bt;
       .pic-echo {
-        width: 70%;
-        margin: 16px auto;
+        margin: 16px 0;
         padding: 0;
-      @media screen and (min-width: 600px) {
-        width: 50%;
-      }
-      @media screen and (min-width: 800px) {
-        width: 45%;
-      }
-      a{
-        background-color: transparent;
-      }
         img {
           padding: 0;
+          width: auto;
+          margin: 0 auto;
         }
       }
       audio {
@@ -149,7 +141,6 @@
         color: $red;
         font-weight: normal;
         font-size: 0.9em;
-
       }
     }
     .read-more-lead {
@@ -162,7 +153,6 @@
         color: $black !important  ;
         background-color: transparent;
         font-weight: normal;
-
       }
       li {
         padding: 4px;
@@ -195,7 +185,7 @@
       @media screen and (min-width: 550px) {
         width: 65%;
         margin-top: 25px;
-      text-align: left;
+        text-align: left;
         float: right;
       }
       i {
@@ -208,7 +198,6 @@
         color: $gray-text;
         display: inline-block;
       }
-
     }
     .short-link-left {
       ul {

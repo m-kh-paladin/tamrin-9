@@ -295,15 +295,17 @@ $vazir-bold: vazir-bold;
   }
 }
 .search-inp {
+  width: 200px;
+  height: 40px;
   display: none;
   font-family: $vazir;
   font-size: 1em;
   background-color: #949090;
   position: absolute;
+  padding: 5px 10px;
   z-index: 1000;
-  padding: 10px 0px;
-  @media screen and(min-width:850px) {
-  padding: 23px 5px;
+  &::placeholder {
+    color: #dbd3d3;
   }
 }
 
