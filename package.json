@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "node-sass -w css/main.scss css/main.css",
-    "uglify": " uglifyjs  js/main.js js/main.min.js"
+    "uglify": " uglifyjs  js/main.js -o js/main.min.js"
   },
   "author": "",
   "license": "ISC",

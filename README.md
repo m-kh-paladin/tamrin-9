@@ -6,5 +6,9 @@
 
 2. `npm run scss`
 
+Finally for compressing JavaScript files write:
+
+3. ‍‍‍‍`npm run uglify`
+
 
 

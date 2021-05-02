@@ -150,7 +150,7 @@ $vazir-bold: vazir-bold;
     a {
       display: inline-block;
       padding: 7px 8px;
-      font-size: 0.9em;
+      font-size: 0.8em;
       color: $gray-nav;
       &:hover {
         color: #363333;
@@ -243,6 +243,7 @@ $vazir-bold: vazir-bold;
     button {
       cursor: pointer;
       background-color: transparent;
+
     }
     @include menu();
   }
@@ -257,7 +258,7 @@ $vazir-bold: vazir-bold;
       text-align: center;
     }
     i {
-      font-size: 2em;
+      font-size: 1.5em;
       padding: 7px;
       cursor: pointer;
     }
@@ -268,13 +269,13 @@ $vazir-bold: vazir-bold;
           display: block;
           text-align: center;
           padding: 7px 0;
-          font-size: 1.2em;
+          font-size: 1em;
           button {
             cursor: pointer;
             background-color: transparent;
           }
           i {
-            font-size: 1.7em;
+            font-size: 1.5em;
           }
         }
       }

@@ -214,11 +214,11 @@ main {
     .col-right .first-content .echo-details p {
       font-size: 0.9em; }
     .col-right .first-content .echo-details .pic-echo {
-      margin: 16px 0;
+      width: 80%;
+      margin: 16px auto;
       padding: 0; }
       .col-right .first-content .echo-details .pic-echo img {
         padding: 0;
-        width: auto;
         margin: 0 auto; }
     .col-right .first-content .echo-details audio {
       width: 100%;
@@ -994,7 +994,7 @@ header .footer-menu li {
   header .footer-menu li a {
     display: inline-block;
     padding: 7px 8px;
-    font-size: 0.9em;
+    font-size: 0.8em;
     color: #888181; }
     header .normal-menu li a:hover,
     header .footer-menu li a:hover {
@@ -1013,7 +1013,7 @@ header .responsive-menu .toggle-icon {
   text-align: center; }
 
 header .responsive-menu i {
-  font-size: 2em;
+  font-size: 1.5em;
   padding: 7px;
   cursor: pointer; }
 
@@ -1024,12 +1024,12 @@ header .responsive-menu i {
       display: block;
       text-align: center;
       padding: 7px 0;
-      font-size: 1.2em; }
+      font-size: 1em; }
       header .responsive-menu ul li button {
         cursor: pointer;
         background-color: transparent; }
       header .responsive-menu ul li i {
-        font-size: 1.7em; } }
+        font-size: 1.5em; } }
 
 header .responsive-menu li {
   font-family: vazir-bold;
@@ -1590,7 +1590,7 @@ footer {
     footer .footer-menu li a {
       display: inline-block;
       padding: 7px 8px;
-      font-size: 0.9em;
+      font-size: 0.8em;
       color: #888181; }
       footer .normal-menu li a:hover,
       footer .footer-menu li a:hover {
