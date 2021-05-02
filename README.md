@@ -1,14 +1,10 @@
-# pendar online
----
-real design : [pendar](https://www.pendaronline.com/)
- ---
- for instal project : 
+# Pendaronline Project
 
-1- `npm install i`
+ Getting Start 
 
-2-in next step for run SASS write : `npm run scss`
+1. `npm install i`
 
-### work progression:
+2. `npm run scss`
 
- page home , news , tags and landing`(economic) (complated)
+
 

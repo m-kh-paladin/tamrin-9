@@ -60,16 +60,28 @@
     }
     .echo-details {
       a {
-        color: coral;
-      }
+        color: $white;
+        background-color: $Purple;
+        border-radius: 5px;
+        padding: 3px 5px;
+            }
       p {
         font-size: 0.9em;
       }
       padding: $space-md-bt;
       .pic-echo {
-        width: 45%;
+        width: 70%;
         margin: 16px auto;
         padding: 0;
+      @media screen and (min-width: 600px) {
+        width: 50%;
+      }
+      @media screen and (min-width: 800px) {
+        width: 45%;
+      }
+      a{
+        background-color: transparent;
+      }
         img {
           padding: 0;
         }
@@ -148,7 +160,9 @@
         padding: 5px 0;
         font-size: 0.9em;
         color: $black !important  ;
+        background-color: transparent;
         font-weight: normal;
+
       }
       li {
         padding: 4px;
@@ -194,6 +208,7 @@
         color: $gray-text;
         display: inline-block;
       }
+
     }
     .short-link-left {
       ul {
@@ -206,6 +221,7 @@
           display: inline-block;
           a {
             font-size: 2em;
+            background-color: transparent;
             padding: 5px;
             .fa-facebook {
               color: #3b5998;

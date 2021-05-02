@@ -4,9 +4,6 @@ $(document).ready(function () {
     })
 
     $(".search-btn").click(function(){
-      $("#search-inp").toggle("slow")
-    })
-    $(".search-btn").click(function(){
-      $("#search-inp-1").toggle("slow")
+      $(".search-inp").toggle("slow")
     })
 });

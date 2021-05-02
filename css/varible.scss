@@ -294,27 +294,19 @@ $vazir-bold: vazir-bold;
     }
   }
 }
-#search-inp {
+.search-inp {
   display: none;
   font-family: $vazir;
-  padding: 8px 20px;
-  border: 3px solid $gray-text;
   font-size: 1em;
-  border-radius: 5px;
-  background-color: $gray-main;
+  background-color: #949090;
   position: absolute;
+  z-index: 1000;
+  padding: 10px 0px;
+  @media screen and(min-width:850px) {
+  padding: 23px 5px;
+  }
 }
-#search-inp-1 {
-  width: 40%;
-  display: none;
-  font-family: $vazir;
-  padding: 8px 20px;
-  border: 3px solid $red;
-  font-size: 1em;
-  border-radius: 5px;
-  background-color: $gray-main;
-  position: absolute;
-}
+
 //////////////////////////footer
 @mixin footer {
   .normal-menu,
