@@ -69,14 +69,12 @@
         font-size: 0.9em;
       }
       padding: $space-md-bt;
-      .pic-echo {
-        width: 80%;
+      img {
+        width: 70%;
+        height: auto;
+        display: block;
         margin: 16px auto;
         padding: 0;
-        img {
-          padding: 0;
-          margin: 0 auto;
-        }
       }
       audio {
         width: 100%;

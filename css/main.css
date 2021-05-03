@@ -213,13 +213,12 @@ main {
       padding: 3px 5px; }
     .col-right .first-content .echo-details p {
       font-size: 0.9em; }
-    .col-right .first-content .echo-details .pic-echo {
-      width: 80%;
+    .col-right .first-content .echo-details img {
+      width: 70%;
+      height: auto;
+      display: block;
       margin: 16px auto;
       padding: 0; }
-      .col-right .first-content .echo-details .pic-echo img {
-        padding: 0;
-        margin: 0 auto; }
     .col-right .first-content .echo-details audio {
       width: 100%;
       margin: 10px 0; }
@@ -568,7 +567,8 @@ main {
   .sv-pull-right .sv-first-news .sv-left h2 a {
     color: #551a8b;
     padding: 15px;
-    font-size: 1.1em; }
+    font-size: 1.1em;
+    display: inline-block; }
     @media screen and (min-width: 850px) {
       .sv-pull-right .sv-first-news .sv-left h2 a {
         font-size: 1.3em; } }
@@ -607,26 +607,28 @@ main {
 
 @media screen and (min-width: 650px) {
   .sv-pull-right .economic .economic-right {
-    width: 30%;
+    width: 25%;
     float: right;
     padding-left: 5px; } }
 
 @media screen and (min-width: 850px) {
   .sv-pull-right .economic .economic-right {
-    width: 25%; } }
+    width: 30%; } }
 
-.sv-pull-right .economic .sv-onomic-left h4 {
+.sv-pull-right .economic .economic-left h4 {
   padding: 7px 0; }
 
 @media screen and (min-width: 650px) {
-  .sv-pull-right .economic .sv-onomic-left {
-    width: 70%;
+  .sv-pull-right .economic .economic-left {
+    width: 75%;
     float: left;
     padding-right: 5px; } }
 
 @media screen and (min-width: 850px) {
-  .sv-pull-right .economic .sv-onomic-left p {
-    font-size: 0.8em; } }
+  .sv-pull-right .economic .economic-left {
+    width: 70%; }
+    .sv-pull-right .economic .economic-left p {
+      font-size: 0.8em; } }
 
 .sv-pull-right .reload {
   text-align: left;
@@ -696,6 +698,8 @@ main {
   position: relative; }
   .sv-pull-left .sv-face-news:hover h3 a {
     color: #098b54; }
+  .sv-pull-left .sv-face-news a {
+    display: inline-block; }
   .sv-pull-left .sv-face-news header {
     margin-top: 16px;
     padding: 10px;
@@ -708,7 +712,8 @@ main {
     .sv-pull-left .sv-face-news .sv-face-news-details h3 a {
       font-size: 1.1em;
       padding: 12px 0;
-      font-size: 0.9em; }
+      font-size: 0.9em;
+      display: inline-block; }
     .sv-pull-left .sv-face-news .sv-face-news-details time {
       font-size: 0.9em;
       background-color: #b50000;
@@ -742,7 +747,8 @@ main {
     .sv-pull-left .sv-currency-news .sv-currency-news-details h3 a {
       font-size: 1.1em;
       padding: 12px 0;
-      font-size: 0.9em; }
+      font-size: 0.9em;
+      display: inline-block; }
     .sv-pull-left .sv-currency-news .sv-currency-news-details time {
       font-size: 0.9em;
       background-color: #b50000;
@@ -776,7 +782,8 @@ main {
     .sv-pull-left .sv-exchange-news .sv-exchange-news-details h3 a {
       font-size: 1.1em;
       padding: 12px 0;
-      font-size: 0.9em; }
+      font-size: 0.9em;
+      display: inline-block; }
     .sv-pull-left .sv-exchange-news .sv-exchange-news-details time {
       font-size: 0.9em;
       background-color: #b50000;
@@ -886,26 +893,28 @@ main {
 
 @media screen and (min-width: 650px) {
   .tags .tags-right {
-    width: 30%;
+    width: 25%;
     float: right;
     padding-left: 5px; } }
 
 @media screen and (min-width: 850px) {
   .tags .tags-right {
-    width: 25%; } }
+    width: 30%; } }
 
 .tags .tags-left h4 {
   padding: 7px 0; }
 
 @media screen and (min-width: 650px) {
   .tags .tags-left {
-    width: 70%;
+    width: 75%;
     float: left;
     padding-right: 5px; } }
 
 @media screen and (min-width: 850px) {
-  .tags .tags-left p {
-    font-size: 0.8em; } }
+  .tags .tags-left {
+    width: 70%; }
+    .tags .tags-left p {
+      font-size: 0.8em; } }
 
 .tags .reload {
   display: block;
@@ -1336,7 +1345,8 @@ main {
       .pull-left .face-news .face-news-details h3 a {
         font-size: 1.1em;
         padding: 12px 0;
-        font-size: 0.9em; }
+        font-size: 0.9em;
+        display: inline-block; }
       .pull-left .face-news .face-news-details time {
         font-size: 0.9em;
         background-color: #b50000;

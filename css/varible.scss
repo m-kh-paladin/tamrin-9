@@ -417,6 +417,7 @@ $vazir-bold: vazir-bold;
     font-size: 1.1em;
     padding: $space-lg-bt;
     font-size: 0.9em;
+    display: inline-block
   }
   time {
     @include time();
