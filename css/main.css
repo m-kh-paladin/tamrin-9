@@ -1489,7 +1489,8 @@ main {
       .more-news .more-right .mr-right li .more-news-content .more-news-details a {
         color: #fff;
         font-size: 0.7em;
-        padding: 4px 4px; }
+        padding: 5px;
+        display: inline-block; }
 
 @media screen and (min-width: 650px) {
   .more-news .more-right .mr-right {
@@ -1574,7 +1575,8 @@ main {
       .more-news .more-left li .more-news-content .more-news-details a {
         color: #fff;
         font-size: 0.7em;
-        padding: 4px 4px; }
+        padding: 5px;
+        display: inline-block; }
 
 footer {
   text-align: center; }
